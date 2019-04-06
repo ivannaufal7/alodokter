@@ -1,0 +1,138 @@
+.searchLocation{
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    line-height: 23.04px;
+    word-spacing: 0px;
+
+    height: 52px;
+    width: 350px;
+    background-position: center left 15px;
+    background-repeat: no-repeat;
+    text-indent: 48px;
+    margin-left: 20px;
+    border: transparent;
+    padding-bottom: 5px;
+}
+
+#searchSpecialities{
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    line-height: 23.04px;
+    word-spacing: 0px;
+
+    height: 52px;
+    width: 350px;
+    background-position: center left 15px;
+    background-repeat: no-repeat;
+    text-indent: 48px;
+    margin-left: 0px;
+    border: transparent;
+    padding-bottom: 5px;
+}
+
+.col-12{
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    line-height: 23.04px;
+    word-spacing: 0px;
+    font-weight: 500;
+    padding-bottom: 25px;
+   
+}
+
+.btn_btn-warning{
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    line-height: 23.04px;
+    word-spacing: 0px;
+    font-weight: 700;
+
+    margin-top: 21px;
+    margin-left: 20px;
+    height: 52px;
+    width: 144px;
+    background-color: #F96D01;
+    border: transparent;
+    color: white;
+    border-radius: 3px;
+    
+}
+
+.bg-blue{
+	background: #3570D2;
+}
+.bg-darkblue{
+	background: #245d9f;
+}
+.head h1, .head h3{
+	padding-bottom: 8px;
+}
+.btn-orange{
+	background: #F96D01;
+}
+.frmCari{
+	position: relative;
+}
+.btnCari{
+	position: absolute;
+	width: 120px;
+	bottom: 10px;
+	left: 77%;
+}
+.card-head{
+	width: 150px;
+	height: 60px;
+	position: relative;
+	left: 38%;
+	bottom: 40px;
+	margin-bottom: 50px;
+}
+.icon-head{
+	width: 40px;
+	height: 40px;
+	margin-right: 8px;
+	padding-left: 12px;
+	position: relative;
+	top: 8px;
+}
+.menu-head p{
+	position: relative;
+	top: 10px;
+}
+.menu-head{
+	padding: 32px;
+	margin-left: 24px; 
+
+}
+.diagnosa{
+	margin-right: 32px;
+}
+.highlight{
+	margin-bottom: 16px;
+}
+.kesehatan, .info-sehat{
+	padding-left: 80px;
+	padding-top: 24px;
+}
+.info-sehat{
+	margin-left: 24px;
+}
+.card-head p{
+	font-size: 14px;
+}
+.kesehatan{
+	position: relative;
+}
+
+/*Tanya Dokter*/
+
+
+/* .col-12{
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    line-height: 23.04px;
+    word-spacing: 0px;
+    font-weight: 500;
+    padding-bottom: 25px;
+   
+} */

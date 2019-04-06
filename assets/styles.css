@@ -1,0 +1,91 @@
+.bg-blue{
+	background: #3570D2;
+}
+.bg-darkblue{
+	background: #245d9f;
+}
+.head h1, .head h3{
+	padding-bottom: 8px;
+}
+.btn-orange{
+	background: #F96D01;
+}
+.frmCari{
+	position: relative;
+}
+.btnCari{
+	position: absolute;
+	width: 120px;
+	bottom: 10px;
+	left: 77%;
+}
+.card-head{
+	width: 150px;
+	height: 60px;
+	position: relative;
+	left: 38%;
+	bottom: 40px;
+	margin-bottom: 50px;
+}
+.icon-head{
+	width: 40px;
+	height: 40px;
+	margin-right: 8px;
+	padding-left: 12px;
+	position: relative;
+	top: 8px;
+}
+.menu-head p{
+	position: relative;
+	top: 10px;
+}
+.menu-head{
+	padding: 32px;
+	margin-left: 24px; 
+
+}
+.diagnosa{
+	margin-right: 32px;
+}
+.highlight{
+	margin-bottom: 16px;
+}
+.kesehatan, .info-sehat{
+	padding-left: 80px;
+	padding-top: 24px;
+}
+.info-sehat{
+	margin-left: 24px;
+}
+.card-head p{
+	font-size: 14px;
+}
+.kesehatan{
+	position: relative;
+}
+
+/*Tanya Dokter*/
+.author{
+	border-radius: 100%;
+}
+.txt-tanya,.btn-tanya{
+	margin-bottom: 24px;
+}
+.txt-tanya{
+	font-size: 24px;
+}
+.tanya{
+	padding-left: 80px;
+	padding-top: 40px;
+}
+.box-filter {
+    width: 300px;
+    height: 300px;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+    border: solid 1px #dadee4;
+    margin: 24px;
+}
+.kota{
+	margin: 24px;
+}
