@@ -18,7 +18,8 @@
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Cari di Alodokter" aria-label="Search">
+            <i><img src="<?= base_url('assets/search.png')?>" width="25px;" style="position:absolute; left: 160px; margin-top:-10px;"></i>
+            <input class="form-control searchInput" type="search" placeholder="Cari di Alodokter" aria-label="Search">
           </form>
       </li>
     </ul>
@@ -37,8 +38,8 @@
         <a class="nav-link" href="<?= base_url('index.php/tanya')?>">Tanya Dokter <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <button class="btn btn-outline-info btn-primary" style="margin-right: 8px; margin-left: 8px;">Masuk</button>
-        <button class="btn btn-md btn-primary">Download Aplikasi</button>
+        <button class="btn btn-outline-info btn-primary btn-masuk" style="margin-right: 8px; margin-left: 8px;">Masuk</button>
+        <button class="btn btn-primary btn-download">Download Aplikasi</button>
       </li>
     </ul>
 

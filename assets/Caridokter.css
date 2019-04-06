@@ -4,6 +4,41 @@
     
 }
 
+.searchInput{
+    width: 362px;
+    height: 42px;
+    padding: 1px 0px 1px 40px;
+    font-size: 14px;
+}
+
+.nav-link{
+    font-size: 14px;
+    margin-right: 30px;
+    margin-left: -30px;
+}
+
+.sr-only{
+    padding: -20px;
+}
+
+.btn-download{
+    width: 208px;
+    height: 40px;
+    font-size: 14px;
+    padding-top: 2px;
+    margin-left: 8px;
+    margin-right: -10px;
+    margin-bottom: 2px;
+    background-color: #3570D2;
+}
+
+.btn-masuk{
+    width: 79px;
+    height: 42px;
+    font-size: 14px;
+    padding-top: 2px;
+}
+
 .col-12{
     font-family: "Lato", sans-serif;
     font-size: 16px;
@@ -24,6 +59,7 @@
 .breadcrumb{
     margin-left: -15px;
     font-size: 12px;
+    
 }
 
 .hdr-2{
@@ -56,20 +92,6 @@
     
 }
 
-.searchProcedure {
-    font-family: "Lato", sans-serif;
-    font-size: 16px;
-    line-height: 23.04px;
-    word-spacing: 0px;
-    height: 12px;
-    width: 12px;
-    background-repeat: no-repeat;
-    text-indent: 48px;
-    margin-left: 0px;
-    border: transparent;
-    padding-bottom: 5px;
-}
-
 .searchLocation{
     font-family: "Lato", sans-serif;
     font-size: 16px;
@@ -82,9 +104,10 @@
     background-repeat: no-repeat;
     text-indent: 48px;
     margin-left: 20px;
-    border: transparent;
+    border: none;
     padding-bottom: 5px;
 }
+
 #searchSpecialities{
     font-family: "Lato", sans-serif;
     font-size: 16px;
@@ -92,13 +115,32 @@
     word-spacing: 0px;
 
     height: 52px;
-    width: 350px;
+    width: 460px;
     background-position: center left 15px;
     background-repeat: no-repeat;
     text-indent: 48px;
     margin-left: 0px;
-    border: transparent;
+    border: none;
     padding-bottom: 5px;
+    post
+}
+
+.btnCari{
+    width: 144px;
+    height: 52px;
+    background-color: #f96d01;
+    letter-spacing: 0.9px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    border: 0;
+    border-radius: 3px;
+    color: #FFFFFF;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 
@@ -123,7 +165,7 @@
     font-size: 16px;
     color: #3570D2;
     font-weight: bold;
-    margin-left: 647px;
+    margin-left: 860px;
     margin-top: -45px;
     text-decoration: none;
     text-align: center;
@@ -171,6 +213,7 @@ a:-webkit-any-link{
 }
 
 .background-top-inner{
+    width: 320px;
     height:185px;
     margin-left:15px;
     margin-right:5px;
