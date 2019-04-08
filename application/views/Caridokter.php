@@ -46,7 +46,7 @@
         <a class="button link-button expand_category" href="#">Lihat Semua</a>
         <div class="d-flex flex-row flex-wrap m-4"> 
                 <div class="p-0 w-30 background-top-inner" style="background: url('<?=base_url('assets/card1.jpg') ?>') top; background-radius:7px;">
-                    <a href="/cari-dokter/dokter-kandungan"><p class="hospital-index-title background-dark">Dokter Kandungan</p></a>
+                    <a href="<?= base_url('index.php/detaildokter')?>"><p class="hospital-index-title background-dark">Dokter Kandungan</p></a>
                 </div>
                 <div class="p-0 w-30 background-top-inner" style="background: url('<?=base_url('assets/card2.jpg') ?>') top; background-radius:7px;">
                     <a href="/cari-dokter/dokter-kandungan"><p class="hospital-index-title background-dark">Dokter Anak</p></a>
