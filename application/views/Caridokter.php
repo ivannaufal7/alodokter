@@ -1,7 +1,7 @@
 <?php $this->load->view('Page_headerdokter')?>
 
 <body>
-    <div class="col-12 " style="background-image: linear-gradient(to left, rgba(900,255,255,0) 0%, #3670d2),url('<?=base_url('assets/caridokter.png') ?>')">
+    <div class="col-12 " style="margin-top:63px;background-image: linear-gradient(to left, rgba(900,255,255,0) 0%, #3670d2),url('<?=base_url('assets/caridokter.png') ?>')">
         <div class="hdr-2">
             <div aria-label="breadcrumb">
                 <ol class="breadcrumb bg-transparent">
@@ -20,14 +20,14 @@
                 <td>
                     <p class="text-white srch">Saya mencari informasi mengenai:</p>
                     <div class="seacrhIcon">
-                        <i><img src="<?= base_url('assets/search.png')?>" width="25px;" style="position:absolute; left: 190px; margin-top:15px;"></i>
+                        <i><img src="<?= base_url('assets/search2.png')?>" width="20px;" style="position:absolute; left: 193px; margin-top:15px;"></i>
                         <input type="search" id="searchSpecialities" class="searchProcedure" placeholder="Cari Dokter Spesialis atau Nama Dokter" autocomplete="off">
                     </div>
                 </td>
                 <td>
                     <p class="text-white lok">Lokasi:</p>
                     <div class="searchIcon">
-                        <i><img src="<?= base_url('assets/location.png')?>" width="30px;" style="position:absolute; left: 670px; margin-top:13px;"></i>
+                        <i><img src="<?= base_url('assets/location1.png')?>" width="23px;" style="position:absolute; left: 670px; margin-top:15px;"></i>
                         <i><img src="<?= base_url('assets/location2.png')?>" width="35px;" style="position:absolute; left: 968px; margin-top:11px;"></i>
                         <input type="search" class="searchLocation" placeholder="Semua Lokasi" disabled>
                     </div>
@@ -41,7 +41,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container contain-cariDokter" style="margin-top:90px; margin-left:120px;">
         <h3 class="text-black subJudul">Pilih Spesialisasi Dokter</h3>
         <a class="button link-button expand_category" href="#">Lihat Semua</a>
         <div class="d-flex flex-row flex-wrap m-4"> 

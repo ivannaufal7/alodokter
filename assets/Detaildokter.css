@@ -1,4 +1,4 @@
-.container{
+.contain-detaildokter{
     margin-left: 170px;
     margin-top: 60px;
 }
@@ -12,6 +12,7 @@
     margin-left: 3px;
     
 }
+
 
 .box-filter{
     width: 300px;
@@ -27,6 +28,9 @@
     font-weight: 500;
 }
 
+.darkGrey{
+    color: #6b6b6b;
+}
 .btn-detail{
     width: 100px;
     height: 32px;

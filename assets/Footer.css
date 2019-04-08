@@ -1,0 +1,108 @@
+.page-footer{
+    background-color: #F9F9F9;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-top: 1px solid #dadee4;
+    width: 1349px;
+    height: 305px;
+}
+
+.footer-inner {
+    background-color: #F9F9F9;
+    padding-top: 26pt;
+    padding-left: 150px;
+    width: 1140px;
+    height: 321px;
+}
+
+.footer-data-item li {
+    margin: 10px auto;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.footer-data-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.aboutus{
+    width: 330px;
+    height: 187px;
+    margin: 0px 0px 30px;
+}
+
+.contact{
+    width: 330px;
+    height: 187px;
+    margin-left: 340px;
+    margin-top: -220px;
+}
+
+.social-media{
+    width: 330px;
+    height: 187px;
+    margin-bottom: -10px;
+    margin-left: 680px;
+    margin-top: -220px;
+}
+
+.footer-row {
+    margin: 14px 0;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -15px;
+    
+}
+
+.socicons-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+   }
+   .socicons-list li {
+    margin: 30px 15px;
+    margin-bottom: -5px;
+   }
+   .socicons-list li a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 60%;
+    color: #fff;
+    background-color: #f1f1f1;
+   }
+
+   .socicons-list li:nth-child(1) a {
+    background-color: #3e5b98;
+   }
+   .socicons-list li:nth-child(2) a {
+    background-color: #c13584;
+   }
+   .socicons-list li:nth-child(3) a {
+    background-color:#dd4b39;
+   }
+   .socicons-list li:nth-child(4) a {
+    background-color:  #4da7de;
+   }
+   .socicons-list li:nth-child(5) a {
+    background-color: #1769ff;
+   }
+}
+
+.footer-data-tittle{
+    color: #000000 !important;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: -20px;
+}
+
+.footer-data-link{
+    margin-right: 20px;
+}

@@ -1,55 +1,70 @@
 <footer class="page-footer font-small blue pt-4">
-    <div class="container-fluid text-center text-md-left">
-      <div class="row">
-        <div class="col-md-6 mt-md-0 mt-3">
-          <h5 class="text-uppercase">Footer Content</h5>
-          <p>Here you can use rows and columns here to organize your footer content.</p>
-
-        </div>
-        <hr class="clearfix w-100 d-md-none pb-3">
-        <div class="col-md-3 mb-md-0 mb-3">
-            <h5 class="text-uppercase">Links</h5>
-
-            <ul class="list-unstyled">
-              <li>
-                <a href="#!">Link 1</a>
-              </li>
-              <li>
-                <a href="#!">Link 2</a>
-              </li>
-              <li>
-                <a href="#!">Link 3</a>
-              </li>
-              <li>
-                <a href="#!">Link 4</a>
-              </li>
-            </ul>
-
-          </div>
-          <div class="col-md-3 mb-md-0 mb-3">
-            <h5 class="text-uppercase">Links</h5>
-
-            <ul class="list-unstyled">
-              <li>
-                <a href="#!">Link 1</a>
-              </li>
-              <li>
-                <a href="#!">Link 2</a>
-              </li>
-              <li>
-                <a href="#!">Link 3</a>
-              </li>
-              <li>
-                <a href="#!">Link 4</a>
-              </li>
-            </ul>
-
-          </div>
+  <div class="footer-inner">
+    <!--footer top-->
+    <div class="footer-top">
+      <div class="footer-data-item aboutus">
+          <ul>
+              <li><a href="#!">Tentang Alodokter</a></li>
+              <li><a href="#!">Gabung Di Tim Dokter</a></li>
+              <li><a href="#!">Iklan</a></li>
+              <li><a href="#!">Daftarkan Rumah Sakit Anda</a></li>
+              <li><a href="#!">Syarat & Ketentuan</a></li>
+          </ul>
       </div>
+      <!--end of about us-->
+
+      <div class="footer-data-item contact">
+          <ul>
+              <li><a href="#!">Karier</a></li>
+              <li><a href="#!">Kontak</a></li>
+              <li><a href="#!">Privasi</a></li>
+              <li><a href="#!">Tim Editorial</a></li>
+              <li><a href="#!">Proteksi Alodokter</a></li>
+          </ul>
+      </div>
+      <!--end of contact-->
+
+      <div class="footer-data-item social-media">
+        <div class="footer-row">
+            <ul class="socicons-list">
+                <li>
+                  <a href='your_url_here' target='_blank'><span class="socicon-facebook"  ></span></a> 
+                </li>
+                  <li>
+                  <a href='your_url_here' target='_blank'><span class="socicon-instagram"></span></a> 
+                </li> 
+                <li>
+                  <a href='your_url_here' target='_blank'><span class="socicon-youtube"></span></a> 
+                </li>   
+                <li>
+                  <a href='your_url_here' target='_blank'><span class="socicon-twitter"></span></a> 
+                </li>
+                <li>
+                  <a href='your_url_here' target='_blank'><span class="socicon-linkedin"></span></a> 
+                </li>   
+            </ul>
+        </div>   
+        <p class="footer-data-tittle"><b>Bagian Dari Alodokter</b></p>   
+        <span>
+          <a href="https://www.alomedika.com" target="_blank" class="footer-data-link">alomedika.com</a>  
+        </span>
+        <span>
+          <a href="https://www.alomedika.com" target="_blank" class="footer-data-link">pobpad.com</a>
+        </span>
+      </div>
+      <!--end of sosmed-->
     </div>
-    <div class="footer-copyright text-center py-3">© 2018 Copyright:
-      <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+    <!--end of footer top-->
+    <br>
+    <hr>
+    <!--footer bottom-->
+    <div class="footer-copyright">
+        <p>Hak Cipta © 2018 Alodokter</p>
     </div>
-  </footer>
+
+  </div> 
+  <!--end of footer inner-->
+
+</footer>
 </body>
 </html>

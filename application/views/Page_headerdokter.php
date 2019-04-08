@@ -3,15 +3,15 @@
 <head>
 	<title>Alodokter</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8">
   <link rel="stylesheet" href="<?= base_url('assets/Caridokter.css')?>">
   <link rel="stylesheet" href="<?= base_url('assets/Detaildokter.css')?>">
-  <link rel="stylesheet" href="<?= base_url('assets/Detaildokter.css')?>">
+  <link rel="stylesheet" href="<?= base_url('assets/Footer.css')?>">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-white">
+	<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
   <a class="navbar-brand" href="<?= base_url('index.php/home')?>"><img src="<?= base_url('assets/alodok.png')?>" width="120px"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -21,7 +21,7 @@
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
          <form class="form-inline my-2 my-lg-0">
-            <i><img src="<?= base_url('assets/search.png')?>" width="25px;" style="position:absolute; left: 160px; margin-top:-10px;"></i>
+            <i><img src="<?= base_url('assets/search2.png')?>" width="15px;" style="position:absolute; left: 170px; margin-top:-7px;"></i>
             <input class="form-control searchInput" type="search" placeholder="Cari di Alodokter" aria-label="Search">
           </form>
       </li>

@@ -1,5 +1,6 @@
-<?php $this->load->view('page_headerdokter')?>
-<div class="col-12 " style="background-image: linear-gradient(to left, rgba(0,255,255,0) 0%, #3670d2),url('<?=base_url('assets/caridokter.png') ?>')">
+<?php $this->load->view('Page_headerdokter')?>
+
+<div class="col-12 " style="margin-top:63px; background-image: linear-gradient(to left, rgba(0,255,255,0) 0%, #3670d2),url('<?=base_url('assets/caridokter.png') ?>')">
         <div class="hdr-2">
             <div aria-label="breadcrumb">
                 <ol class="breadcrumb bg-transparent">
@@ -20,7 +21,7 @@
                     <p class="text-white srch">Saya mencari informasi mengenai:</p>
 
                     <div class="seacrhIcon">
-                        <i><img src="<?= base_url('assets/search.png')?>" width="25px;" style="position:absolute; left: 190px; margin-top:15px;"></i>
+                        <i><img src="<?= base_url('assets/search2.png')?>" width="20px;" style="position:absolute; left: 193px; margin-top:15px;"></i>
                         <input type="search" id="searchSpecialities" class="searchLocation" placeholder="Cari Dokter Spesialis atau Nama Dokter" autocomplete="off">
                         
                     </div>
@@ -28,7 +29,7 @@
                 <td>
                 <p class="text-white lok">Lokasi:</p>
                     <div class="searchIcon">
-                        <i><img src="<?= base_url('assets/location.png')?>" width="30px;" style="position:absolute; left: 670px; margin-top:13px;"></i>
+                        <i><img src="<?= base_url('assets/location1.png')?>" width="23px;" style="position:absolute; left: 670px; margin-top:15px;"></i>
                         <i><img src="<?= base_url('assets/location2.png')?>" width="35px;" style="position:absolute; left: 968px; margin-top:11px;"></i>
                         <input type="search" class="searchLocation" placeholder="Semua Lokasi">
                     </div>
@@ -39,7 +40,7 @@
         </div>
 </div>
 
-<div class="d-flex flex-row flex-wrap container">
+<div class="d-flex flex-row flex-wrap container contain-detaildokter">
   <div class="sidenav p-2 box-filter">
     <div class="kota" style="margin:20px;">
         <h6 >Pilih Kota</h6>
@@ -56,12 +57,18 @@
 
         <div class="form-check" style="margin-bottom: 15px;">
           <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-          <label class="form-check-label" for="exampleRadios1">Bandung</label>
+          <label class="form-check-label" for="exampleRadios1">Aceh</label>
         </div>
+
 
         <div class="form-check" style="margin-bottom: 15px;">
           <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
           <label class="form-check-label" for="exampleRadios1">Bali</label>
+        </div>
+
+        <div class="form-check" style="margin-bottom: 15px;">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+          <label class="form-check-label" for="exampleRadios1">Balikpapan</label>
         </div>
     </div>
   </div>
@@ -70,40 +77,64 @@
     <div class="p-2">
       <div class="d-flex flex-row">
         <h6 class="p-2" style="margin-top: 8px; margin-left: 10px;">Filter:</h6>
-
+        
         <div class="input-group col-3 p-2">
-          <select class="custom-select" id="inputGroupSelect02">
-            <option selected>Tersedia Besok</option>
-          </select>
+          <button type="button" class="btn btn-outline-secondary btn-filter" data-toggle="modal" data-target=".modal" style="font-size:14px;width:150px;text-align:left;">Tersedia Besok</button>
+          <i><img src="<?= base_url('assets/arraw-down.png')?>" width="10px;" style="position:absolute; left: 130px; margin-top:-23px;"></i>
         </div>
 
         <div class="input-group col-3 p-2">
-          <select class="custom-select" id="inputGroupSelect02">
-            <option selected>Pilih Hari</option>
-          </select>
+        <button type="button" class="btn btn-outline-secondary btn-filter" data-toggle="modal" data-target="#Modal2" style="font-size:14px;width:100px;text-align:left;">Pilih Hari</button>
+          <i><img src="<?= base_url('assets/arraw-down.png')?>" width="10px;" style="position:absolute; left: 90px; margin-top:14px;"></i>
         </div>
       </div>  
     </div>
-        
+
+    <!--MODAL 1-->
+    <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Filter</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          
+          <div class="modal-body">
+            <!--isi-->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end-->
+
+
     <div class="p-4">
           <h3>Cari Jadwal Dokter Kandungan</h3>
             <!--1-->
                 <div class="card p-2" style="width: 667px; height: 130px; margin-top: 16px;">
                   <div class="d-flex flex-row flex-wrap"> 
-                    <div class="p-1">
-                      <img src="<?= base_url('assets/dr.1.png')?>" style="border-radius: 100%; margin-top: 10px; margin-left:5px;" width="80px">
+                  <div class="p-1">
+                      <img src="<?= base_url('assets/dr.3.jpg')?>" style="border-radius: 100%; margin-top: 10px; margin-left:5px;" width="80px">
                     </div>
 
                     <div class="card-body p-1" style="margin-left: 25px; margin-top:10px;">
-                      <h6 class="card-title">dr. Lenny Khosal, M.Kes, Sp.OG</h6>
+                      <h6 class="card-title">dr. Ni Putu Titien Sri Kusumayanti, Sp.OG</h6>
                       <p class="card-text" style="font-size: 11px; margin-bottom: 4px; margin-top:-5px;">Dokter Kandungan</p>
-                      <p class="card-text" style="font-size: 11px; margin-bottom: 4px;">Makassar</p>
-                      <p class="card-text" style="font-size: 11px;">Siloam Hospitals Makassar</p>
+                      <i><img src="<?= base_url('assets/location3.png')?>" width="15px;" style="position:absolute; right: 523px; margin-top:0px;"></i>
+                      <p class="card-text" style="font-size: 11px; margin-bottom: 4px; margin-left:15px;">Cikarang</p>
+                      <i><img src="<?= base_url('assets/healthcare.png')?>" width="15px;" style="position:absolute; right: 523px; margin-top:0px;"></i>
+                      <p class="card-text" style="font-size: 11px; margin-left:15px;">Mitra Keluarga Cikarang</p>
                     </div>
 
                     <div class="p-1">
                       <p class="text-primary" style="margin: 10px; font-size: 13px;">Biaya mulai dari</p>
-                      <p class="text-primary" style="font-weight: bold; margin-left: 24px; font-size: 14px; margin-top:-10px;">Rp. 200.000</p>
+                      <p class="text-primary" style="font-weight: bold; margin-left: 24px; font-size: 14px; margin-top:-10px;">Rp. 135.000</p>
                       <div class="doctor-button" id="button">
                         <a href="#" class="btn btn-outline-secondary btn-detail">Lihat Detail</a>
                         <a href="#" class="btn btn-warning btn-janji">Buat Janji</a>
@@ -115,16 +146,18 @@
                 <div class="card p-2" style="width: 667px; height: 130px; margin-top: 16px;">
                   <div class="d-flex flex-row flex-wrap"> 
                     <div class="p-1">
-                      <img src="<?= base_url('assets/dr.2.jpg')?>" style="border-radius: 100%; margin-top: 10px; margin-left:5px;" width="80px">
+                      <img src="<?= base_url('assets/dr.1.png')?>" style="border-radius: 100%; margin-top: 10px; margin-left:5px;" width="80px">
                     </div>
 
                     <div class="card-body p-1" style="margin-left: 25px; margin-top:10px;">
-                      <h6 class="card-title">dr. Lina Meilina Pudjiastuti, Sp.OG</h6>
+                      <h6 class="card-title">dr. Lenny Khosal, M.Kes, Sp.OG</h6>
                       <p class="card-text" style="font-size: 11px; margin-bottom: 4px; margin-top:-5px;">Dokter Kandungan</p>
-                      <p class="card-text" style="font-size: 11px; margin-bottom: 4px;">Makassar</p>
-                      <p class="card-text" style="font-size: 11px;">Siloam Hospitals Makassar</p>
+                      <i><img src="<?= base_url('assets/location3.png')?>" width="15px;" style="position:absolute; right: 523px; margin-top:0px;"></i>
+                      <p class="card-text" style="font-size: 11px; margin-bottom: 4px; margin-left:15px;">Makassar</p>
+                      <i><img src="<?= base_url('assets/healthcare.png')?>" width="15px;" style="position:absolute; right: 523px; margin-top:0px;"></i>
+                      <p class="card-text" style="font-size: 11px;margin-left:15px;">Siloam Hospitals Makassar</p>
                     </div>
-
+                    
                     <div class="p-1">
                       <p class="text-primary" style="margin: 10px; font-size: 13px;">Biaya mulai dari</p>
                       <p class="text-primary" style="font-weight: bold; margin-left: 24px; font-size: 14px; margin-top:-10px;">Rp. 200.000</p>
@@ -140,19 +173,22 @@
                 <div class="card p-2" style="width: 667px; height: 130px; margin-top: 16px;">
                   <div class="d-flex flex-row flex-wrap"> 
                     <div class="p-1">
-                      <img src="<?= base_url('assets/dr.3.jpg')?>" style="border-radius: 100%; margin-top: 10px; margin-left:5px;" width="80px">
+                      <img src="<?= base_url('assets/dr.2.jpg')?>" style="border-radius: 100%; margin-top: 10px; margin-left:5px;" width="80px">
                     </div>
 
                     <div class="card-body p-1" style="margin-left: 25px; margin-top:10px;">
-                      <h6 class="card-title">dr. Ni Putu Titien Sri Kusumayanti, Sp.OG</h6>
+                      <h6 class="card-title">dr. Lina Meilina Pudjiastuti, Sp.OG</h6>
                       <p class="card-text" style="font-size: 11px; margin-bottom: 4px; margin-top:-5px;">Dokter Kandungan</p>
-                      <p class="card-text" style="font-size: 11px; margin-bottom: 4px;">Makassar</p>
-                      <p class="card-text" style="font-size: 11px;">Siloam Hospitals Makassar</p>
+                      <i><img src="<?= base_url('assets/location3.png')?>" width="15px;" style="position:absolute; right: 523px; margin-top:0px;"></i>
+                      <p class="card-text" style="font-size: 11px; margin-bottom: 4px; margin-left:15px;">Bekasi Selatan, Bekasi</p>
+                      <i><img src="<?= base_url('assets/healthcare.png')?>" width="15px;" style="position:absolute; right: 523px; margin-top:0px;"></i>
+                      <p class="card-text" style="font-size: 11px;margin-left:15px;">Mitra Keluarga Bekasi</p>
                     </div>
 
+                    
                     <div class="p-1">
                       <p class="text-primary" style="margin: 10px; font-size: 13px;">Biaya mulai dari</p>
-                      <p class="text-primary" style="font-weight: bold; margin-left: 24px; font-size: 14px; margin-top:-10px;">Rp. 200.000</p>
+                      <p class="text-primary" style="font-weight: bold; margin-left: 24px; font-size: 14px; margin-top:-10px;">Rp. 210.000</p>
                       <div class="doctor-button" id="button">
                         <a href="#" class="btn btn-outline-secondary btn-detail">Lihat Detail</a>
                         <a href="#" class="btn btn-warning btn-janji">Buat Janji</a>
@@ -171,13 +207,15 @@
                     <div class="card-body p-1" style="margin-left: 25px; margin-top:10px;">
                       <h6 class="card-title">dr. Tia Indriana, Sp.OG</h6>
                       <p class="card-text" style="font-size: 11px; margin-bottom: 4px; margin-top:-5px;">Dokter Kandungan</p>
-                      <p class="card-text" style="font-size: 11px; margin-bottom: 4px;">Makassar</p>
-                      <p class="card-text" style="font-size: 11px;">Siloam Hospitals Makassar</p>
+                      <i><img src="<?= base_url('assets/location3.png')?>" width="15px;" style="position:absolute; right: 523px; margin-top:0px;"></i>
+                      <p class="card-text" style="font-size: 11px; margin-bottom: 4px; margin-left:15px;">Purwakarta</p>
+                      <i><img src="<?= base_url('assets/healthcare.png')?>" width="15px;" style="position:absolute; right: 523px; margin-top:0px;"></i>
+                      <p class="card-text" style="font-size: 11px;margin-left:15px;">Siloam Hospitals Purwakarta</p>
                     </div>
 
                     <div class="p-1">
                       <p class="text-primary" style="margin: 10px; font-size: 13px;">Biaya mulai dari</p>
-                      <p class="text-primary" style="font-weight: bold; margin-left: 24px; font-size: 14px; margin-top:-10px;">Rp. 200.000</p>
+                      <p class="text-primary" style="font-weight: bold; margin-left: 24px; font-size: 14px; margin-top:-10px;">Rp. 95.000</p>
                       <div class="doctor-button" id="button">
                         <a href="#" class="btn btn-outline-secondary btn-detail">Lihat Detail</a>
                         <a href="#" class="btn btn-warning btn-janji">Buat Janji</a>
@@ -196,13 +234,15 @@
                     <div class="card-body p-1" style="margin-left: 25px; margin-top:10px;">
                       <h6 class="card-title">dr. Inneke Sirowanto, Sp.OG</h6>
                       <p class="card-text" style="font-size: 11px; margin-bottom: 4px; margin-top:-5px;">Dokter Kandungan</p>
-                      <p class="card-text" style="font-size: 11px; margin-bottom: 4px;">Makassar</p>
-                      <p class="card-text" style="font-size: 11px;">Siloam Hospitals Makassar</p>
+                      <i><img src="<?= base_url('assets/location3.png')?>" width="15px;" style="position:absolute; right: 523px; margin-top:0px;"></i>
+                      <p class="card-text" style="font-size: 11px; margin-bottom: 4px; margin-left:15px;">Pinang, Tangerang</p>
+                      <i><img src="<?= base_url('assets/healthcare.png')?>" width="15px;" style="position:absolute; right: 523px; margin-top:0px;"></i>
+                      <p class="card-text" style="font-size: 11px;margin-left:15px;">RS Awa Bros Tangerang</p>
                     </div>
 
                     <div class="p-1">
                       <p class="text-primary" style="margin: 10px; font-size: 13px;">Biaya mulai dari</p>
-                      <p class="text-primary" style="font-weight: bold; margin-left: 24px; font-size: 14px; margin-top:-10px;">Rp. 200.000</p>
+                      <p class="text-primary" style="font-weight: bold; margin-left: 24px; font-size: 14px; margin-top:-10px;">Rp. 250.000</p>
                       <div class="doctor-button" id="button">
                         <a href="#" class="btn btn-outline-secondary btn-detail">Lihat Detail</a>
                         <a href="#" class="btn btn-warning btn-janji">Buat Janji</a>
@@ -215,19 +255,21 @@
                 <div class="card p-2" style="width: 667px; height: 130px; margin-top: 16px;">
                   <div class="d-flex flex-row flex-wrap"> 
                     <div class="p-1">
-                      <img src="<?= base_url('assets/dr.6.jpg')?>" style="border-radius: 100%; margin-top: 10px; margin-left:5px;" width="80px">
+                      <img src="<?= base_url('assets/dr.7.jpg')?>" style="border-radius: 100%; margin-top: 10px; margin-left:5px;" width="80px">
                     </div>
 
                     <div class="card-body p-1" style="margin-left: 25px; margin-top:10px;">
-                      <h6 class="card-title">dr. Anthony Atmadja, Sp.OGG</h6>
+                      <h6 class="card-title">dr. Renie Widiyanti, Sp.OG</h6>
                       <p class="card-text" style="font-size: 11px; margin-bottom: 4px; margin-top:-5px;">Dokter Kandungan</p>
-                      <p class="card-text" style="font-size: 11px; margin-bottom: 4px;">Makassar</p>
-                      <p class="card-text" style="font-size: 11px;">Siloam Hospitals Makassar</p>
+                      <i><img src="<?= base_url('assets/location3.png')?>" width="15px;" style="position:absolute; right: 523px; margin-top:0px;"></i>
+                      <p class="card-text" style="font-size: 11px; margin-bottom: 4px; margin-left:15px;">Gubeng, Surabaya</p>
+                      <i><img src="<?= base_url('assets/healthcare.png')?>" width="15px;" style="position:absolute; right: 523px; margin-top:0px;"></i>
+                      <p class="card-text" style="font-size: 11px;margin-left:15px;">Siloam Hospitals Surabaya</p>
                     </div>
 
                     <div class="p-1">
                       <p class="text-primary" style="margin: 10px; font-size: 13px;">Biaya mulai dari</p>
-                      <p class="text-primary" style="font-weight: bold; margin-left: 24px; font-size: 14px; margin-top:-10px;">Rp. 200.000</p>
+                      <p class="text-primary" style="font-weight: bold; margin-left: 24px; font-size: 14px; margin-top:-10px;">Rp. 150.000</p>
                       <div class="doctor-button" id="button">
                         <a href="#" class="btn btn-outline-secondary btn-detail">Lihat Detail</a>
                         <a href="#" class="btn btn-warning btn-janji">Buat Janji</a>
@@ -240,19 +282,21 @@
                 <div class="card p-2" style="width: 667px; height: 130px; margin-top: 16px;">
                   <div class="d-flex flex-row flex-wrap"> 
                     <div class="p-1">
-                      <img src="<?= base_url('assets/dr.7.jpg')?>" style="border-radius: 100%; margin-top: 10px; margin-left:5px;" width="80px">
+                      <img src="<?= base_url('assets/dr.6.jpg')?>" style="border-radius: 100%; margin-top: 10px; margin-left:5px;" width="80px">
                     </div>
 
                     <div class="card-body p-1" style="margin-left: 25px; margin-top:10px;">
-                      <h6 class="card-title">dr. Renie Widiyanti, Sp.OG</h6>
+                      <h6 class="card-title">dr. Anthony Atmadja, Sp.OGG</h6>
                       <p class="card-text" style="font-size: 11px; margin-bottom: 4px; margin-top:-5px;">Dokter Kandungan</p>
-                      <p class="card-text" style="font-size: 11px; margin-bottom: 4px;">Makassar</p>
-                      <p class="card-text" style="font-size: 11px;">Siloam Hospitals Makassar</p>
+                      <i><img src="<?= base_url('assets/location3.png')?>" width="15px;" style="position:absolute; right: 523px; margin-top:0px;"></i>
+                      <p class="card-text" style="font-size: 11px; margin-bottom: 4px; margin-left:15px;">Bekasi Selatan, Bekasi</p>
+                      <i><img src="<?= base_url('assets/healthcare.png')?>" width="15px;" style="position:absolute; right: 523px; margin-top:0px;"></i>
+                      <p class="card-text" style="font-size: 11px;margin-left:15px;">Siloam Hospitals Bekasi</p>
                     </div>
 
                     <div class="p-1">
                       <p class="text-primary" style="margin: 10px; font-size: 13px;">Biaya mulai dari</p>
-                      <p class="text-primary" style="font-weight: bold; margin-left: 24px; font-size: 14px; margin-top:-10px;">Rp. 200.000</p>
+                      <p class="text-primary" style="font-weight: bold; margin-left: 24px; font-size: 14px; margin-top:-10px;">Rp. 210.000</p>
                       <div class="doctor-button" id="button">
                         <a href="#" class="btn btn-outline-secondary btn-detail">Lihat Detail</a>
                         <a href="#" class="btn btn-warning btn-janji">Buat Janji</a>
@@ -272,13 +316,15 @@
                     <div class="card-body p-1" style="margin-left: 25px; margin-top:10px;">
                       <h6 class="card-title">dr. Amelia Abdullah, Sp.OG</h6>
                       <p class="card-text" style="font-size: 11px; margin-bottom: 4px; margin-top:-5px;">Dokter Kandungan</p>
-                      <p class="card-text" style="font-size: 11px; margin-bottom: 4px;">Makassar</p>
-                      <p class="card-text" style="font-size: 11px;">Siloam Hospitals Makassar</p>
+                      <i><img src="<?= base_url('assets/location3.png')?>" width="15px;" style="position:absolute; right: 523px; margin-top:0px;"></i>
+                      <p class="card-text" style="font-size: 11px; margin-bottom: 4px; margin-left:15px;">Makassar</p>
+                      <i><img src="<?= base_url('assets/healthcare.png')?>" width="15px;" style="position:absolute; right: 523px; margin-top:0px;"></i>
+                      <p class="card-text" style="font-size: 11px;margin-left:15px;">RS Awal Bros Makassar</p>
                     </div>
 
                     <div class="p-1">
                       <p class="text-primary" style="margin: 10px; font-size: 13px;">Biaya mulai dari</p>
-                      <p class="text-primary" style="font-weight: bold; margin-left: 24px; font-size: 14px; margin-top:-10px;">Rp. 200.000</p>
+                      <p class="text-primary" style="font-weight: bold; margin-left: 24px; font-size: 14px; margin-top:-10px;">Rp. 250.000</p>
                       <div class="doctor-button" id="button">
                         <a href="#" class="btn btn-outline-secondary btn-detail">Lihat Detail</a>
                         <a href="#" class="btn btn-warning btn-janji">Buat Janji</a>
@@ -297,8 +343,10 @@
                     <div class="card-body p-1" style="margin-left: 25px; margin-top:10px;">
                       <h6 class="card-title">dr. Evelyn Tunardy, Sp.OG</h6>
                       <p class="card-text" style="font-size: 11px; margin-bottom: 4px; margin-top:-5px;">Dokter Kandungan</p>
-                      <p class="card-text" style="font-size: 11px; margin-bottom: 4px;">Makassar</p>
-                      <p class="card-text" style="font-size: 11px;">Siloam Hospitals Makassar</p>
+                      <i><img src="<?= base_url('assets/location3.png')?>" width="15px;" style="position:absolute; right: 523px; margin-top:0px;"></i>
+                      <p class="card-text" style="font-size: 11px; margin-bottom: 4px; margin-left:15px;">Makassar</p>
+                      <i><img src="<?= base_url('assets/healthcare.png')?>" width="15px;" style="position:absolute; right: 523px; margin-top:0px;"></i>
+                      <p class="card-text" style="font-size: 11px;margin-left:15px;">Siloam Hospitals Makassar</p>
                     </div>
 
                     <div class="p-1">
@@ -322,13 +370,15 @@
                     <div class="card-body p-1" style="margin-left: 25px; margin-top:10px;">
                       <h6 class="card-title">dr. Olivia Franciska Laksmana, Sp.OG</h6>
                       <p class="card-text" style="font-size: 11px; margin-bottom: 4px; margin-top:-5px;">Dokter Kandungan</p>
-                      <p class="card-text" style="font-size: 11px; margin-bottom: 4px;">Makassar</p>
-                      <p class="card-text" style="font-size: 11px;">Siloam Hospitals Makassar</p>
+                      <i><img src="<?= base_url('assets/location3.png')?>" width="15px;" style="position:absolute; right: 523px; margin-top:0px;"></i>
+                      <p class="card-text" style="font-size: 11px; margin-bottom: 4px; margin-left:15px;">Semarang</p>
+                      <i><img src="<?= base_url('assets/healthcare.png')?>" width="15px;" style="position:absolute; right: 523px; margin-top:0px;"></i>
+                      <p class="card-text" style="font-size: 11px;margin-left:15px;">Columbia Asia Hospital Semarang</p>
                     </div>
 
                     <div class="p-1">
                       <p class="text-primary" style="margin: 10px; font-size: 13px;">Biaya mulai dari</p>
-                      <p class="text-primary" style="font-weight: bold; margin-left: 24px; font-size: 14px; margin-top:-10px;">Rp. 200.000</p>
+                      <p class="text-primary" style="font-weight: bold; margin-left: 24px; font-size: 14px; margin-top:-10px;">Rp. 150.000</p>
                       <div class="doctor-button" id="button">
                         <a href="#" class="btn btn-outline-secondary btn-detail">Lihat Detail</a>
                         <a href="#" class="btn btn-warning btn-janji">Buat Janji</a>
