@@ -36,7 +36,8 @@
     line-height: 23.04px;
     word-spacing: 0px;
     font-weight: 500;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
    
 }
 
@@ -122,6 +123,10 @@
 }
 .kesehatan{
 	position: relative;
+}
+
+.list-wraper{
+    margin:auto;
 }
 
 /*Tanya Dokter*/
