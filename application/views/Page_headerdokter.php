@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="<?= base_url('assets/Caridokter.css')?>">
   <link rel="stylesheet" href="<?= base_url('assets/Detaildokter.css')?>">
   <link rel="stylesheet" href="<?= base_url('assets/Footer.css')?>">
+  <link rel="stylesheet" href="<?= base_url('assets/Profildokter.css')?>">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
 </head>

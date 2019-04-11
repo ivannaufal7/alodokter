@@ -40,6 +40,8 @@
         </div>
 </div>
 
+<!-- ISI -->
+
 <div class="d-flex flex-row flex-wrap container contain-detaildokter">
   <div class="sidenav p-2 box-filter">
     <div class="kota" style="margin:20px;">
@@ -79,40 +81,16 @@
         <h6 class="p-2" style="margin-top: 8px; margin-left: 10px;">Filter:</h6>
         
         <div class="input-group col-3 p-2">
-          <button type="button" class="btn btn-outline-secondary btn-filter" data-toggle="modal" data-target=".modal" style="font-size:14px;width:150px;text-align:left;">Tersedia Besok</button>
+          <button type="button" class="btn btn-outline-secondary btn-filter" style="font-size:14px;width:150px;text-align:left;">Tersedia Besok</button>
           <i><img src="<?= base_url('assets/arraw-down.png')?>" width="10px;" style="position:absolute; left: 130px; margin-top:-23px;"></i>
         </div>
 
         <div class="input-group col-3 p-2">
-        <button type="button" class="btn btn-outline-secondary btn-filter" data-toggle="modal" data-target="#Modal2" style="font-size:14px;width:100px;text-align:left;">Pilih Hari</button>
+        <button type="button" class="btn btn-outline-secondary btn-filter" style="font-size:14px;width:100px;text-align:left;">Pilih Hari</button>
           <i><img src="<?= base_url('assets/arraw-down.png')?>" width="10px;" style="position:absolute; left: 90px; margin-top:14px;"></i>
         </div>
       </div>  
     </div>
-
-    <!--MODAL 1-->
-    <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Filter</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          
-          <div class="modal-body">
-            <!--isi-->
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--end-->
-
 
     <div class="p-4">
           <h3>Cari Jadwal Dokter Kandungan</h3>
@@ -136,7 +114,7 @@
                       <p class="text-primary" style="margin: 10px; font-size: 13px;">Biaya mulai dari</p>
                       <p class="text-primary" style="font-weight: bold; margin-left: 24px; font-size: 14px; margin-top:-10px;">Rp. 135.000</p>
                       <div class="doctor-button" id="button">
-                        <a href="#" class="btn btn-outline-secondary btn-detail">Lihat Detail</a>
+                        <a href="<?= base_url('index.php/profildokter')?>" class="btn btn-outline-secondary btn-detail">Lihat Detail</a>
                         <a href="#" class="btn btn-warning btn-janji">Buat Janji</a>
                       </div>
                     </div>
