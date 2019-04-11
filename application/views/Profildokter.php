@@ -49,3 +49,5 @@
 
 </div>
 <!-- end of contain-profildokter -->
+
+<?php $this->load->view('Page_footer')?>
