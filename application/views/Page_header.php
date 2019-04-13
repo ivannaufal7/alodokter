@@ -19,27 +19,40 @@
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Cari di Alodokter" aria-label="Search">
+            <i><img src="<?= base_url('assets/search2.png')?>" width="15px;" style="position:absolute; left: 170px; margin-top:-7px;"></i>
+            <input class="form-control mr-sm-2 search" type="search" placeholder="Cari di Alodokter" aria-label="Search">
           </form>
       </li>
     </ul>
    
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Info Kesehatan <span class="sr-only">(current)</span></a>
+        <a class="nav-link menu-size" href="#">Info Kesehatan <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="<?= base_url('index.php/caridokter')?>">Cari Dokter <span class="sr-only">(current)</span></a>
+        <a class="nav-link menu-size" href="<?= base_url('index.php/caridokter')?>">Cari Dokter <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="<?= base_url('index.php/cariRS')?>">Cari Rumah Sakit <span class="sr-only">(current)</span></a>
+        <a class="nav-link menu-size" href="<?= base_url('index.php/cariRS')?>">Cari Rumah Sakit <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="<?= base_url('index.php/tanya')?>">Tanya Dokter <span class="sr-only">(current)</span></a>
+        <a class="nav-link menu-size" href="<?= base_url('index.php/tanya')?>">Tanya Dokter <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <button class="btn btn-outline-info btn-primary" style="margin-right: 8px; margin-left: 8px;">Masuk</button>
-        <button class="btn btn-md btn-primary">Download Aplikasi</button>
+        <?php
+          if($this->simple_login->cek_login() == true){
+           ?>
+            <a href="" class="nav-link text-primary"><?= $this->session->userdata('username')?></a>
+            <a href="" class="nav-link"><?= anchor('login_controller/logout','Logout');?></a>
+        <?php 
+          }else{
+         ?>
+            <a href="<?= base_url('index.php/login_controller');?>" class="btn btn-outline-info btn-primary" style="margin-right: 8px; margin-left: 8px;">Masuk</a>
+            <button class="btn btn-md btn-primary">Download Aplikasi</button>
+         <?php   
+          }
+        ?>
+        
       </li>
     </ul>
 

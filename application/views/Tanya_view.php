@@ -24,6 +24,9 @@
 
 		<div class="form-tanya">
 			<h6>Judul Topik</h6>
+			<?php
+          if($this->simple_login->cek_login() == true){
+           ?>
 			<form class="form-group">
 				<input type="text" class="form-control" style="margin-bottom: 12px;" name="judul" placeholder="Contoh: Dari umur berapa bayi boleh diberi makan pada ?">
 				<textarea name="editor1"></textarea>
@@ -41,7 +44,9 @@
 				<button type="button" class="btn btn-outline-info btn-lg btn-tanya">Batal</button>
 				<button type="button" class="btn btn-primary btn-lg btn-tanya">Kirim</button>				
 			</div>
-
+			<?php 
+			          }
+	        ?>
 		</div>
 		<div class="question d-flex flex-row flex-wrap">
 				<img src="<?= base_url('assets/default_ava.png')?>" class="p-2 author" width="80px">
