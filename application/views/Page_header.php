@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="<?= base_url('assets/styles.css')?>">
+  <link rel="stylesheet" type="text/css" href="<?= base_url('assets/profile.css')?>">
   <script src="https://cdn.ckeditor.com/4.11.3/basic/ckeditor.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -45,8 +46,15 @@
         <?php
           if($this->simple_login->cek_login() == true){
            ?>
-            <a href="" class="nav-link text-primary"><?= $this->session->userdata('username')?></a>
-            <a href="" class="nav-link"><?= anchor('login_controller/logout','Logout');?></a>
+            <a href="" class="nav-link text-primary dropdown-toggle" data-toggle="dropdown"><?= $this->session->userdata('username')?></a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a href="<?= base_url('index.php/Profile_controller')?>" class="nav-link dropdown-item">Profil</a>
+              <a href="<?= base_url('index.php/TambahArtikel_controller')?>" class="nav-link dropdown-item">Tambah Artikel</a>
+              <a href="" class="nav-link dropdown-item">Tambah Dokter</a>
+              <a href="" class="nav-link dropdown-item">Tambah Rumah Sakit</a>
+              <a href="<?= base_url('index.php/login_controller/logout')?>" class="nav-link dropdown-item">Keluar</a>
+            </div>
+            
         <?php 
           }else{
          ?>

@@ -1,0 +1,29 @@
+
+.main-container {
+    width: 667px;
+    display: inline-block;
+    padding-top: 45px;
+    margin-left: 480px;
+    position: relative;
+    bottom: 620px;
+}
+.search-tab-menu {
+    width: 667px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 50px;
+    border-bottom: 1px solid #dadee4;
+    font-weight: bold;
+}
+.menu{
+    display: inline-block;
+    list-style-type: none;
+}
+.activ{
+    width: 180px;
+   border-bottom: 5px solid #3570D2; 
+}
+.nav li:hover{
+ width: 180px;
+   border-bottom: 5px solid #3570D2; 
+}

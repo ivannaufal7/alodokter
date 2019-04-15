@@ -1,59 +1,45 @@
-<?php $this->load->view('page_header.php')?>
-<div class="col-12 bg-blue">
-	<div class="d-flex flex-row flex-wrap text-white" style="margin-left: 8%; padding: 0px; font-size: 12px;">
-		<div class="p-2 diagnosa" >Diabetes</div>
-		<div class="p-2 diagnosa">Jantung</div>
-		<div class="p-2 diagnosa">Kesehatan Mulut</div>
-		<div class="p-2 diagnosa">Kolesterol Tinggi</div>
-		<div class="p-2 diagnosa">Diet</div>
-		<div class="p-2 diagnosa">Kecantikan</div>
-		<div class="p-2 diagnosa">Kulit</div>
-		<div class="p-2 diagnosa">Kehamilan</div>
-		<div class="p-2 diagnosa">Bayi</div>
-		<div class="p-2 diagnosa">Mata</div>
-	</div>
-</div>
-<div class="container col-12">
-	<div class="col-8 tanya">
-		<h3 class="txt-tanya">Tanya Dokter</h3>
-		<!-- <button class="btn btn-primary btn-lg btn-block btn-tanya">Buat Pertanyaan</button>
-		<button class="btn bg-darkblue text-white btn-lg btn-block btn-tanya">Cari Pertanyaan Berdasarkan Topik</button> -->
-		<button type="button" class="btn btn-outline-info btn-lg col-5 btn-tanya">Buat Pertanyaan</button>
-		<button type="button" class="btn btn-primary btn-lg col-6 btn-tanya">Cari Pertanyaan Berdasarkan Topik</button>
-		<h3 class="txt-tanya">Diskusi Kesehatan Terbaru</h3>
+<?php $this->load->view('Page_header')?>
+<div class="side-container" style="margin-top: 60px;">
+            <div class="d-flex flex-row flex-wrap container ">
+                <div class="p-2 box-filter box-profile bg-white" style="height:558px;">
+                    <div class="text-center" style="margin-top:15px;">
 
-		<div class="form-tanya">
-			
-			<?php
-          if($this->simple_login->cek_login() == true){
-           ?>
-           <h6>Judul Topik</h6>
-			<form class="form-group" action="<?= base_url('index.php/Tanya_controller/tanya')?>" method="post">
-				<input type="text" class="form-control" style="margin-bottom: 12px;" name="topik" placeholder="Contoh: Dari umur berapa bayi boleh diberi makan pada ?">
-				<textarea name="textTanya"></textarea>
-				<script>
-                        CKEDITOR.replace( 'textTanya' );
-                </script>
-                <div class="form-check" style="margin-top: 12px;">
-				  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-				  <label class="form-check-label" for="defaultCheck1">
-				    Saya bersedia menerima notifikasi untuk pertanyaan ini
-				  </label>
-				</div>
-				<div class="text-right">
-				<button type="button" class="btn btn-outline-info btn-lg btn-tanya">Batal</button>
-				<input type="submit" class="btn btn-primary btn-lg btn-tanya" value="Kirim" />				
-			</div>
-			</form>
-			
-			<?php 
-			          }
-			 ?>
-		</div>
-		
-		
-		<?php     
-			  error_reporting(0);
+                        <div class="text-center">
+                            <img src="<?= base_url('assets/dr.3.jpg')?>" alt="" style="border-radius: 100%; margin-top: 0px; margin-bottom: :0px;" width="150px">
+                            <p class="text-center text-primary" style="margin-top: 8px; font-weight: bold;"><?= $this->session->userdata('username')?></p> 
+                        </div>
+                        <div class="">
+                            <p class="text-center" style="font-weight: bold;">Bio </p>
+                            <p class="text-center">-</p>
+                        </div>
+                        <div class="">
+                            <p class="text-center" style="font-weight: bold;">Email </p>
+                            <p class="text-center">-</p>
+                        </div>
+                        <div class="">
+                            <p class="text-center" style="font-weight: bold;">Diskusi </p>
+                            <p class="text-center">-</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+       <div class="main-container"> 
+       	<div class="search-tab-menu-container"> 
+       		<div class="search-tab-menu"> 
+       			<ul class="nav">
+				  <li class="nav-item activ" style="width: 180px; text-align: center;">
+				    <a class="nav-link active" href="#">Diskusi</a>
+				  </li>
+				  <li class="nav-item" style="width: 180px; text-align: center;">
+				    <a class="nav-link" href="#">Edit Profil</a>
+				  </li>
+				</ul>
+       		</div> 
+       	</div>
+
+		<?php 
+			  error_reporting(0);    
 			  foreach ($tanya as $val) {    	
 		?>
 		 <!--1-->
@@ -76,7 +62,7 @@
 							if($this->session->userdata('id') == $val->id_pasien){
 						?>
                       <div>
-                        <?php echo anchor('Tanya_controller/deletePertanyaan/'.$val->id_pertanyaan, 'Delete', array('class'=>'delete btn btn-danger float-right', 'onclick'=>"return confirmDialog();")); ?>
+                        <?php echo anchor('Tanya_controller/deletePertanyaanProfil/'.$val->id_pertanyaan, 'Delete', array('class'=>'delete btn btn-danger float-right', 'onclick'=>"return confirmDialog();")); ?>
                         <a data-toggle="modal" data-target="#modal-edit<?=$val->id_pertanyaan;?>" class="btn btn-warning float-right text-white" data-popup="tooltip" data-placement="top" title="Edit Data" style="margin-right: 8px;">Edit</a>
               
                       </div>
@@ -93,23 +79,17 @@
                 </div>
                 <?php
 					   }
-			     ?>  
-		
-	</div>
-		<div class="col-5 p-2 float-right iklan" style="position: absolute; bottom: 0px; left:70%; top: 20px; width: 120px;">
-		<img src="<?= base_url('assets/iklan.gif')?>" width="300px" style="padding-bottom: 24px">
-		<img src="<?= base_url('assets/iklan2.jpg')?>" width="300px">
-	</div>
-	<div class="col-7" style="margin-left: 104px; margin-top: 24px;">
-				<button class="btn btn-primary text-white float-right">Selanjutnya >></button>		
-	</div>
+			     ?>   
 
-	<!-- Modal Ubah Pertanyaan-->
+
+       </div>
+
+       <!-- Modal Ubah Pertanyaan-->
 	<?php $no=0; foreach($tanya as $val): $no++; ?>
 <div class="row">
   <div id="modal-edit<?=$val->id_pertanyaan;?>" class="modal fade">
     <div class="modal-dialog">
-      <form action="<?php echo site_url('Tanya_controller/editPertanyaan/').$val->id_pertanyaan; ?>" method="post">
+      <form action="<?php echo site_url('Tanya_controller/editPertanyaanProfil/').$val->id_pertanyaan; ?>" method="post">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -142,5 +122,3 @@
   </div>
 </div>
 <?php endforeach; ?>
-
-</div>

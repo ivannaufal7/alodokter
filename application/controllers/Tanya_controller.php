@@ -40,6 +40,11 @@ class Tanya_controller extends CI_Controller {
 		$this->Tanya_model->deleteTanya("tb_pertanyaan",$where);
 		redirect('Tanya_controller');
 	}
+	public function deletePertanyaanProfil($id){
+		$where = array('id_pertanyaan' => $id);
+		$this->Tanya_model->deleteTanya("tb_pertanyaan",$where);
+		redirect('Profile_controller');
+	}
 	public function editPertanyaan($id){
 		$where = array('id_pertanyaan' => $id);
 		$topik = $this->input->post('topik');
@@ -51,6 +56,18 @@ class Tanya_controller extends CI_Controller {
 		);
 		$this->Tanya_model->updateTanya("tb_pertanyaan",$where,$data);
 		redirect('Tanya_controller');
+	}
+	public function editPertanyaanProfil($id){
+		$where = array('id_pertanyaan' => $id);
+		$topik = $this->input->post('topik');
+		$tanya = $this->input->post('textQuestion'.$id);
+
+		$data = array(
+			"topik" => $topik,
+			"pertanyaan" => $tanya,
+		);
+		$this->Tanya_model->updateTanya("tb_pertanyaan",$where,$data);
+		redirect('Profile_controller');
 	}
 
 }
