@@ -54,7 +54,6 @@
               <a href="" class="nav-link dropdown-item">Tambah Rumah Sakit</a>
               <a href="<?= base_url('index.php/login_controller/logout')?>" class="nav-link dropdown-item">Keluar</a>
             </div>
-            
         <?php 
           }else{
          ?>

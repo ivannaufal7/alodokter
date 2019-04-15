@@ -23,7 +23,11 @@ box-profilehtml, body{
     text-decoration: none;
     color: #3570d2;
     cursor: pointer;
-    font-weight: bold;
+}
+
+a.nav-link{
+    margin-left: 25px;
+   
 }
 
 
@@ -73,9 +77,5 @@ p > .doctor-name {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-}
-
-li{
-   
 }
 

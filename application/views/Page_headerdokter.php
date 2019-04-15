@@ -10,9 +10,14 @@
   <link rel="stylesheet" href="<?= base_url('assets/Profildokter.css')?>">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
+  <script src="https://cdn.ckeditor.com/4.11.3/basic/ckeditor.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+	<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top" style="border-bottom: 1px solid #dadee4;">
   <a class="navbar-brand" href="<?= base_url('index.php/home')?>"><img src="<?= base_url('assets/alodok.png')?>" width="120px"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -42,8 +47,27 @@
         <a class="nav-link" href="<?= base_url('index.php/tanya')?>">Tanya Dokter <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <button class="btn btn-outline-info btn-primary btn-masuk" style="margin-right: 8px; margin-left: 8px;">Masuk</button>
-        <button class="btn btn-primary btn-download">Download Aplikasi</button>
+      <?php
+          if($this->simple_login->cek_login() == true){
+           ?>
+            <li class="dropdown pull-right">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>
+                <?= $this->session->userdata('username')?><span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="nav-link" style="text-align: left; color:#3570D2; margin-left:0px;">Profile</a></li>
+                <li  style="text-align:left; color:#3570D2; margin-left:10px; font-size:14px;"><a href="#"class="nav-link"><?= anchor('login_controller/logout','Logout');?></a></li>
+              </ul>
+              <button class="btn btn-primary btn-download">Download Aplikasi</button>
+            </li>
+      
+        <?php 
+          }else{
+         ?>
+            <a href="<?= base_url('index.php/login_controller');?>" class="btn btn-outline-info btn-primary" style="margin-right: 8px; margin-left: 8px;">Masuk</a>
+            <button class="btn btn-md btn-primary">Download Aplikasi</button>
+         <?php   
+          }
+        ?>
       </li>
     </ul>
 
