@@ -45,8 +45,16 @@
         <?php
           if($this->simple_login->cek_login() == true){
            ?>
-            <a href="" class="nav-link text-primary"><?= $this->session->userdata('username')?></a>
-            <a href="" class="nav-link"><?= anchor('login_controller/logout','Logout');?></a>
+            <li class="dropdown pull-right">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>
+                <?= $this->session->userdata('username')?><span class="caret"></span></a>
+              <ul class="dropdown-menu">
+              <li><a href="#" class="nav-link" style="text-align: left; color:#3570D2; margin-left:0px;">Profile</a></li>
+                <li  style="text-align:left; color:#3570D2; margin-left:10px; font-size:14px;"><a href="#"class="nav-link"><?= anchor('login_controller/logout','Logout');?></a></li>
+              </ul>
+              <button class="btn btn-primary btn-download">Download Aplikasi</button>
+            </li>
+      
         <?php 
           }else{
          ?>
