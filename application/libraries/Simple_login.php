@@ -20,14 +20,16 @@
  
          if($query->num_rows() == 1) {
              //ambil data user berdasar username
-             $row  = $this->CI->db->query('SELECT id_pasien FROM tb_pasien where username = "'.$username.'"');
+             $row  = $this->CI->db->query('SELECT id_pasien,status FROM tb_pasien where username = "'.$username.'"');
              $admin     = $row->row();
              $id   = $admin->id_pasien;
+             $status = $admin->status;
  
              //set session user
              $this->CI->session->set_userdata('username', $username);
              $this->CI->session->set_userdata('id_login', uniqid(rand()));
              $this->CI->session->set_userdata('id', $id);
+             $this->CI->session->set_userdata('status',$status);
  
              //redirect ke halaman dashboard
              redirect('Home_controller');

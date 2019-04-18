@@ -44,7 +44,7 @@
       </li>
       <li class="nav-item active">
         <?php
-          if($this->simple_login->cek_login() == true){
+          if($this->simple_login->cek_login() == true && $this->session->userdata('status') == "admin"){
            ?>
              <li class="dropdown pull-right">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>
@@ -57,6 +57,18 @@
               <button class="btn btn-primary btn-download">Download Aplikasi</button>
             </li>
         <?php 
+          }else if($this->simple_login->cek_login() == true && $this->session->userdata('status') == "pasien"){
+        ?>
+          <li class="dropdown pull-right">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>
+                <?= $this->session->userdata('username')?><span class="caret"></span></a>
+              <ul class="dropdown-menu">
+              <li><a href="<?= base_url('index.php/Profile_controller')?>" class="nav-link" style="text-align: left; color:#3570D2; margin-left:0px;">Profile</a></li>
+              <li><a href="<?= base_url('index.php/login_controller/logout')?>" class="nav-link dropdown-item text-primary">Keluar</a></li>
+              </ul>
+              <button class="btn btn-primary btn-download">Download Aplikasi</button>
+            </li>
+        <?php
           }else{
          ?>
             <a href="<?= base_url('index.php/login_controller');?>" class="btn btn-outline-info btn-primary" style="margin-right: 8px; margin-left: 8px;">Masuk</a>

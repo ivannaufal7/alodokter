@@ -26,6 +26,7 @@ class Register_controller extends CI_Controller {
 				"username" => $this->input->post('username'),
 				"email" => $this->input->post('email'),
 				"password" => md5($this->input->post('pass')),
+				"status" => "pasien",
 			);
 			$this->Account_model->daftar($data);
 			$this->session->set_flashdata('daftar','Pendaftaran Berhasil');

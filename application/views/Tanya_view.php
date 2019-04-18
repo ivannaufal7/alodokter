@@ -81,6 +81,14 @@
               
                       </div>
                       <?php
+							}else if($this->session->userdata('status') == "admin"){
+								?>
+								<div>
+			                        <?php echo anchor('Tanya_controller/deletePertanyaan/'.$val->id_pertanyaan, 'Delete', array('class'=>'delete btn btn-danger float-right', 'onclick'=>"return confirmDialog();")); ?>
+			                        <a data-toggle="modal" data-target="#modal-edit<?=$val->id_pertanyaan;?>" class="btn btn-warning float-right text-white" data-popup="tooltip" data-placement="top" title="Edit Data" style="margin-right: 8px;">Edit</a>
+			              
+			                     </div>
+						<?php
 							}
 						?>
 						<script>
