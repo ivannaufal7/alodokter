@@ -55,6 +55,7 @@ $route['tanya'] = 'tanya_controller';
 $route['caridokter'] = 'Caridokter_controller';
 $route['cariRS'] = 'CariRS_controller';
 $route['detaildokter'] = 'detaildokter_controller';
+$route['detailRS'] = 'DetailRS_controller';
 $route['profildokter'] = 'Profildokter_controller';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
