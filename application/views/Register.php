@@ -22,7 +22,7 @@
 				    <input type="checkbox" class="form-check-input" id="exampleCheck1">
 				    <label class="form-check-label" for="exampleCheck1">Saya setuju dengan <a href="">Syarat & Ketentuan</a></label>
 				  </div>
-				  <input type="submit" class="btn btn-orange col-12 text-white" style="margin-top: 16px" value="Masuk" />
+				  <input type="submit" class="btn btn-orange col-12 text-white" style="margin-top: 16px" value="Daftar" />
 				  <p style="margin-top: 12px;">Sudah punya akun Alodokter? <a href="<?= base_url('index.php/login_controller');?>">Masuk</a></p>
 			</form>
 		</div>

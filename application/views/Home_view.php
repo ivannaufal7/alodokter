@@ -72,8 +72,8 @@
 					<img src="<?= base_url('assets/').$row->foto_artikel?>" width="300" height="166">	
 				</div>
 				<div class="p-2">
-					<h3 class="w-50" style="font-size: 18px; margin-bottom: 24px;"><a href="<?= base_url('index.php/TambahArtikel_controller/readArtikel/').$row->id_artikel?>" class="text-dark" style="text-decoration: none;"><?= $row->judul_artikel?></a></h3>
-					<div class="w-50" style="font-size: 16px;"><?= substr($row->deskripsi, 0, 100)?></div>
+					<h3 style="font-size: 18px; margin-bottom: 24px; width: 350px;"><a href="<?= base_url('index.php/TambahArtikel_controller/readArtikel/').$row->id_artikel?>" class="text-dark" style="text-decoration: none;"><?= $row->judul_artikel?></a></h3>
+					<div class="w-75" style="font-size: 16px;"><?= substr($row->deskripsi, 0, 100)?></div>
 					<a href="<?= base_url('index.php/TambahArtikel_controller/readArtikel/').$row->id_artikel?>" class="text-primary">Baca Selengkapnya</a><br>
 					<?php if($this->session->userdata('status') == "admin"){?>
 					<a data-toggle="modal" data-target="#modal-edit<?=$row->id_artikel;?>" class="text-warning" data-popup="tooltip" data-placement="top" title="Edit Data" style="cursor: pointer;">Edit</a>

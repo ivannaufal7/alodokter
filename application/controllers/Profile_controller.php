@@ -11,7 +11,7 @@ class Profile_controller extends CI_Controller {
 	{
 		$where = $this->session->userdata('id');
 		$data['tanya'] = $this->Tanya_model->getDataTanyaWhere($where);
-		$this->Tanya_model->countDiskusi($where);
+		// $this->Tanya_model->countDiskusi($where);
 		$this->load->view('Profile',$data);
 	}
 }

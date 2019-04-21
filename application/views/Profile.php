@@ -59,7 +59,7 @@
                       <p class="text-primary text-right" style="margin: 10px; position: relative; left: 8px; font-size: 16px;">0 Balasan</p>
                       <p class="text-right" style="margin-left: 24px; font-size: 16px; margin-top:-10px;"><?= $val->tanggal_tanya?></p>
                       <?php
-							if($this->session->userdata('id') == $val->id_pasien){
+							if($this->session->userdata('id_pasien') == $val->id_pasien){
 						?>
                       <div>
                         <?php echo anchor('Tanya_controller/deletePertanyaanProfil/'.$val->id_pertanyaan, 'Delete', array('class'=>'delete btn btn-danger float-right', 'onclick'=>"return confirmDialog();")); ?>

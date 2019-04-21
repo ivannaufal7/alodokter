@@ -16,19 +16,26 @@
      public function login($username, $password) {
          
          //cek username dan password
-         $query = $this->CI->db->get_where('tb_pasien',array('username'=>$username,'password' => md5($password)));
+         $query = $this->CI->db->get_where('tb_pengguna',array('username'=>$username,'password' => md5($password)));
  
          if($query->num_rows() == 1) {
              //ambil data user berdasar username
-             $row  = $this->CI->db->query('SELECT id_pasien,status FROM tb_pasien where username = "'.$username.'"');
+             // $row  = $this->CI->db->query('SELECT id_pengguna,id_pasien, status FROM tb_pengguna join tb_pasien on tb_pengguna.id_pengguna = tb_pasien.id_pengguna where username = "'.$username.'"');
+             $this->CI->db->select('tb_pengguna.id_pengguna, id_pasien, status');
+             $this->CI->db->from('tb_pengguna');
+             $this->CI->db->join('tb_pasien', 'tb_pengguna.id_pengguna = tb_pasien.id_pengguna');
+             $this->CI->db->where('tb_pengguna.username',$username);
+             $row = $this->CI->db->get();
              $admin     = $row->row();
-             $id   = $admin->id_pasien;
+             $id   = $admin->id_pengguna;
+             $id_pasien   = $admin->id_pasien;
              $status = $admin->status;
  
              //set session user
              $this->CI->session->set_userdata('username', $username);
              $this->CI->session->set_userdata('id_login', uniqid(rand()));
              $this->CI->session->set_userdata('id', $id);
+             $this->CI->session->set_userdata('id_pasien', $id_pasien);
              $this->CI->session->set_userdata('status',$status);
  
              //redirect ke halaman dashboard

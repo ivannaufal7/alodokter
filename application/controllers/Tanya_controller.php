@@ -25,7 +25,7 @@ class Tanya_controller extends CI_Controller {
 			redirect('Tanya_controller');
 		}else{
 			$data = array(
-				"id_pasien" => $this->session->userdata('id'),
+				"id_pasien" => $this->session->userdata('id_pasien'),
 				"topik" => $this->input->post('topik'),
 				"pertanyaan" => $this->input->post('textTanya'),
 				"tanggal_tanya" => date('Y-m-d H:i:s'),

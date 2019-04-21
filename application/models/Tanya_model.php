@@ -7,10 +7,10 @@ class Tanya_model extends CI_Model {
 	}
 
 	function getDataTanya(){
-		$this->db->select("tb_pasien.id_pasien, tb_pasien.username, id_pertanyaan,topik, pertanyaan, tanggal_tanya");
+		$this->db->select("tb_pasien.id_pasien, tb_pengguna.username, id_pertanyaan,topik, pertanyaan, tanggal_tanya");
 		$this->db->from("tb_pertanyaan");
 		$this->db->join("tb_pasien","tb_pertanyaan.id_pasien = tb_pasien.id_pasien");
-
+		$this->db->join("tb_pengguna","tb_pasien.id_pengguna = tb_pengguna.id_pengguna");
 		$query = $this->db->get();
 		if($query->num_rows() != 0){
 			return $query->result();
@@ -20,10 +20,11 @@ class Tanya_model extends CI_Model {
 	}
 
 	function getDataTanyaWhere($where){
-		$this->db->select("tb_pasien.id_pasien, tb_pasien.username, id_pertanyaan,topik, pertanyaan, tanggal_tanya");
+		$this->db->select("tb_pasien.id_pasien, tb_pengguna.username, id_pertanyaan,topik, pertanyaan, tanggal_tanya");
 		$this->db->from("tb_pertanyaan");
 		$this->db->join("tb_pasien","tb_pertanyaan.id_pasien = tb_pasien.id_pasien");
-		$this->db->where("tb_pasien.id_pasien",$where);
+		$this->db->join("tb_pengguna","tb_pasien.id_pengguna = tb_pengguna.id_pengguna");
+		$this->db->where("tb_pengguna.id_pengguna",$where);
 
 		$query = $this->db->get();
 		if($query->num_rows() != 0){

@@ -42,7 +42,8 @@ class TambahArtikel_controller extends CI_Controller {
          $data = array(
             'judul_artikel'=> $this->input->post('judulartikel'),
             'deskripsi'=> $this->input->post('deskripsi'),
-            'foto_artikel' => $_data['upload_data']['file_name']
+            'foto_artikel' => $_data['upload_data']['file_name'],
+            'id_pengguna' => $this->session->userdata('id'),
             );
         if($this->TambahArtikel_model->insertArtikel($data)){
             echo 'berhasil di upload';
@@ -73,12 +74,14 @@ public function deleteArtikel($id){
 	    $config['max_height']           = 3000;
 	    $this->load->library('upload', $config);
 	    if (!$this->upload->do_upload('userfile')){
+	    	$id_pengguna = $this->session->userdata('id');
 	    	$judulartikel = $this->input->post('judulartikel');
 			$deskripsi = $this->input->post('textDeskripsi'.$id);
 			$file = $this->upload->data();
 			$gambar = $this->input->post('old_image');
 
 			$data = array(
+				"id_pengguna" => $id_pengguna,
 				"judul_artikel" => $judulartikel,
 				"deskripsi" => $deskripsi,
 				"foto_artikel" => $gambar,
@@ -89,6 +92,7 @@ public function deleteArtikel($id){
             // $error = array('error' => $this->upload->display_errors());
            redirect('Home_controller');
     	}else{
+    		$id_pengguna = $this->session->userdata('id');
     		$judulartikel = $this->input->post('judulartikel');
 			$deskripsi = $this->input->post('textDeskripsi'.$id);
 			$file = $this->upload->data();
@@ -96,6 +100,7 @@ public function deleteArtikel($id){
 
 			unlink("assets/".$this->input->post('old_image'));
 			$data = array(
+				"id_pengguna" => $id_pengguna,
 				"judul_artikel" => $judulartikel,
 				"deskripsi" => $deskripsi,
 				"foto_artikel" => $gambar,
