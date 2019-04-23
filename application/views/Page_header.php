@@ -25,7 +25,7 @@
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
          <form class="form-inline my-2 my-lg-0">
-            <i><img src="<?= base_url('assets/search2.png')?>" width="15px;" style="position:absolute; left: 170px; margin-top:-7px;"></i>
+            <i><img src="" width="15px;" style="position:absolute; left: 170px; margin-top:-7px;"></i>
             <input class="form-control mr-sm-2 search" type="search" placeholder="Cari di Alodokter" aria-label="Search">
           </form>
       </li>

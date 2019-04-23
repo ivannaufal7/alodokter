@@ -54,6 +54,7 @@ $route['home'] = 'home_controller';
 $route['tanya'] = 'tanya_controller';
 $route['caridokter'] = 'Caridokter_controller';
 $route['cariRS'] = 'CariRS_controller';
+$route['infoRS'] = 'RSinfo_controller';
 $route['detaildokter'] = 'detaildokter_controller';
 $route['detailRS'] = 'DetailRS_controller';
 $route['profildokter'] = 'Profildokter_controller';

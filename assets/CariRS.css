@@ -150,11 +150,11 @@
     width: 40px;
 }
 
-.isi-cards{
-    font-size: 10px;
+.isi-card{
+    font-size: 15px;
 }
 
-.pil-lanjutan {
-    font-size: 10px;
-    text-decoration: none;
+.pil-lanjutan{
+    font-size: 5px;
+    
 }

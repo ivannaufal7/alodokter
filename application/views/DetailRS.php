@@ -23,7 +23,7 @@
                     <p class="text-white lok">  Lokasi:</p>
                     <input type="search" class="searchLocation" placeholder="Semua Lokasi">
                 </td>
-                <td><button type="button" class="btn_btn-warning">Cari</button></td>
+                <td><button type="button" class="btn_btn-warning" style="margin-top:40px;">Cari</button></td>
                 </tr>
 
             </table>
@@ -111,231 +111,236 @@
 
 <div class="col-8">
 <h3 style="font-size:bold;">Estimasi Biaya Sistem Pencernaan</h3>
-<div class="card mt-3">
-      <div class="row ">
-        <div class="col-md-4">
-            <img src="<?= base_url('assets/RS-1.jpg')?>" class="w-60">
-          </div>
-          <div class="col-md-8 px-3">
-            <div class="card-block px-2" style="margin-left:-70px;">
-              <h5>rumah sakit premiere bintaro</h5>
-            </div>
-            <div style="margin-left:-60px;">
-              <h6>lokasinya</h6>
-            </div>
-            <div class="row">
-            <div class="col-3" style="margin-right:70px;margin-top:10px;margin-left:-60px;font-size:13px;"><p class="badge badge-secondary">sistempen..</p></div>
-            <div class="col-4"><button type="button" class="btn_btn-warning" style="height:40px;weight:30px;background-color:white;color:grey;border:1px solid #cecece;margin:auto;">Cari</button></div>
-            <div class="col-4"><button type="button" class="btn_btn-warning" style="height:40px;weight:30px;border:1px solid #cecece;margin:auto">Cari</button></div>
-            </div>
-          </div>
 
-        </div>
+<a href="<?= base_url('index.php/RSinfo_controller')?>" style="text-decoration: none;color:black;">
+  <div class="card mt-3">
+  <div class="row ">
+    <div class="col-md-4">
+        <img src="<?= base_url('assets/RS-1.jpg')?>" class="w-60">
       </div>
-      <div class="card mt-3">
-      <div class="row ">
-        <div class="col-md-4">
-            <img src="<?= base_url('assets/RS-1.jpg')?>" class="w-60">
-          </div>
-          <div class="col-md-8 px-3">
-            <div class="card-block px-2" style="margin-left:-70px;">
-              <h5>rumah sakit premiere bintaro</h5>
-            </div>
-            <div style="margin-left:-60px;">
-              <h6>lokasinya</h6>
-            </div>
-            <div class="row">
-            <div class="col-3" style="margin-right:70px;margin-top:10px;margin-left:-60px;font-size:13px;"><p class="badge badge-secondary">sistempen..</p></div>
-            <div class="col-4"><button type="button" class="btn_btn-warning" style="height:40px;weight:30px;background-color:white;color:grey;border:1px solid #cecece;margin:auto;">Cari</button></div>
-            <div class="col-4"><button type="button" class="btn_btn-warning" style="height:40px;weight:30px;border:1px solid #cecece;margin:auto">Cari</button></div>
-            </div>
-          </div>
-
+      <div class="col-md-8 px-3">
+        <div class="card-block px-2" style="margin-left:-70px;">
+          <h5>rumah sakit premiere bintaro</h5>
+        </div>
+        <div style="margin-left:-60px;">
+          <h6>lokasinya</h6>
+        </div>
+        <div class="row">
+        <div class="col-3" style="margin-right:70px;margin-top:10px;margin-left:-60px;font-size:13px;"><p class="badge badge-secondary">sistempen..</p></div>
+        <div class="col-4"><button type="button" class="btn_btn-warning" style="height:30px;weight:30px;background-color:white;color:grey;border:1px solid #cecece;margin:auto;font-weight: normal;">Lihat Detail</button></div>
+        <div class="col-4"><button type="button" class="btn_btn-warning" style="height:30px;weight:30px;border:1px solid #cecece;margin:auto;font-weight: normal;">Buat Janji</button></div>
         </div>
       </div>
 
-      <div class="card mt-3">
-      <div class="row ">
-        <div class="col-md-4">
-            <img src="<?= base_url('assets/RS-1.jpg')?>" class="w-60">
-          </div>
-          <div class="col-md-8 px-3">
-            <div class="card-block px-2" style="margin-left:-70px;">
-              <h5>rumah sakit premiere bintaro</h5>
-            </div>
-            <div style="margin-left:-60px;">
-              <h6>lokasinya</h6>
-            </div>
-            <div class="row">
-            <div class="col-3" style="margin-right:70px;margin-top:10px;margin-left:-60px;font-size:13px;"><p class="badge badge-secondary">sistempen..</p></div>
-            <div class="col-4"><button type="button" class="btn_btn-warning" style="height:40px;weight:30px;background-color:white;color:grey;border:1px solid #cecece;margin:auto;">Cari</button></div>
-            <div class="col-4"><button type="button" class="btn_btn-warning" style="height:40px;weight:30px;border:1px solid #cecece;margin:auto">Cari</button></div>
-            </div>
-          </div>
+    </div>
+  </div>
 
+</a>
+
+<a href="<?= base_url('index.php/RSinfo_controller')?>" style="text-decoration: none;color:black;">
+  <div class="card mt-3">
+  <div class="row ">
+    <div class="col-md-4">
+        <img src="<?= base_url('assets/RS-1.jpg')?>" class="w-60">
+      </div>
+      <div class="col-md-8 px-3">
+        <div class="card-block px-2" style="margin-left:-70px;">
+          <h5>rumah sakit premiere bintaro</h5>
+        </div>
+        <div style="margin-left:-60px;">
+          <h6>lokasinya</h6>
+        </div>
+        <div class="row">
+        <div class="col-3" style="margin-right:70px;margin-top:10px;margin-left:-60px;font-size:13px;"><p class="badge badge-secondary">sistempen..</p></div>
+        <div class="col-4"><button type="button" class="btn_btn-warning" style="height:30px;weight:30px;background-color:white;color:grey;border:1px solid #cecece;margin:auto;font-weight: normal;">Lihat Detail</button></div>
+        <div class="col-4"><button type="button" class="btn_btn-warning" style="height:30px;weight:30px;border:1px solid #cecece;margin:auto;font-weight: normal;">Buat Janji</button></div>
         </div>
       </div>
 
-      <div class="card mt-3">
-      <div class="row ">
-        <div class="col-md-4">
-            <img src="<?= base_url('assets/RS-1.jpg')?>" class="w-60">
-          </div>
-          <div class="col-md-8 px-3">
-            <div class="card-block px-2" style="margin-left:-70px;">
-              <h5>rumah sakit premiere bintaro</h5>
-            </div>
-            <div style="margin-left:-60px;">
-              <h6>lokasinya</h6>
-            </div>
-            <div class="row">
-            <div class="col-3" style="margin-right:70px;margin-top:10px;margin-left:-60px;font-size:13px;"><p class="badge badge-secondary">sistempen..</p></div>
-            <div class="col-4"><button type="button" class="btn_btn-warning" style="height:40px;weight:30px;background-color:white;color:grey;border:1px solid #cecece;margin:auto;">Cari</button></div>
-            <div class="col-4"><button type="button" class="btn_btn-warning" style="height:40px;weight:30px;border:1px solid #cecece;margin:auto">Cari</button></div>
-            </div>
-          </div>
+    </div>
+  </div>
 
+</a>
+
+<a href="<?= base_url('index.php/RSinfo_controller')?>" style="text-decoration: none;color:black;">
+  <div class="card mt-3">
+  <div class="row ">
+    <div class="col-md-4">
+        <img src="<?= base_url('assets/RS-1.jpg')?>" class="w-60">
+      </div>
+      <div class="col-md-8 px-3">
+        <div class="card-block px-2" style="margin-left:-70px;">
+          <h5>rumah sakit premiere bintaro</h5>
+        </div>
+        <div style="margin-left:-60px;">
+          <h6>lokasinya</h6>
+        </div>
+        <div class="row">
+        <div class="col-3" style="margin-right:70px;margin-top:10px;margin-left:-60px;font-size:13px;"><p class="badge badge-secondary">sistempen..</p></div>
+        <div class="col-4"><button type="button" class="btn_btn-warning" style="height:30px;weight:30px;background-color:white;color:grey;border:1px solid #cecece;margin:auto;font-weight: normal;">Lihat Detail</button></div>
+        <div class="col-4"><button type="button" class="btn_btn-warning" style="height:30px;weight:30px;border:1px solid #cecece;margin:auto;font-weight: normal;">Buat Janji</button></div>
         </div>
       </div>
 
-      <div class="card mt-3">
-      <div class="row ">
-        <div class="col-md-4">
-            <img src="<?= base_url('assets/RS-1.jpg')?>" class="w-60">
-          </div>
-          <div class="col-md-8 px-3">
-            <div class="card-block px-2" style="margin-left:-70px;">
-              <h5>rumah sakit premiere bintaro</h5>
-            </div>
-            <div style="margin-left:-60px;">
-              <h6>lokasinya</h6>
-            </div>
-            <div class="row">
-            <div class="col-3" style="margin-right:70px;margin-top:10px;margin-left:-60px;font-size:13px;"><p class="badge badge-secondary">sistempen..</p></div>
-            <div class="col-4"><button type="button" class="btn_btn-warning" style="height:40px;weight:30px;background-color:white;color:grey;border:1px solid #cecece;margin:auto;">Cari</button></div>
-            <div class="col-4"><button type="button" class="btn_btn-warning" style="height:40px;weight:30px;border:1px solid #cecece;margin:auto">Cari</button></div>
-            </div>
-          </div>
+    </div>
+  </div>
 
+</a>
+
+<a href="<?= base_url('index.php/RSinfo_controller')?>" style="text-decoration: none;color:black;">
+  <div class="card mt-3">
+  <div class="row ">
+    <div class="col-md-4">
+        <img src="<?= base_url('assets/RS-1.jpg')?>" class="w-60">
+      </div>
+      <div class="col-md-8 px-3">
+        <div class="card-block px-2" style="margin-left:-70px;">
+          <h5>rumah sakit premiere bintaro</h5>
+        </div>
+        <div style="margin-left:-60px;">
+          <h6>lokasinya</h6>
+        </div>
+        <div class="row">
+        <div class="col-3" style="margin-right:70px;margin-top:10px;margin-left:-60px;font-size:13px;"><p class="badge badge-secondary">sistempen..</p></div>
+        <div class="col-4"><button type="button" class="btn_btn-warning" style="height:30px;weight:30px;background-color:white;color:grey;border:1px solid #cecece;margin:auto;font-weight: normal;">Lihat Detail</button></div>
+        <div class="col-4"><button type="button" class="btn_btn-warning" style="height:30px;weight:30px;border:1px solid #cecece;margin:auto;font-weight: normal;">Buat Janji</button></div>
         </div>
       </div>
 
-      <div class="card mt-3">
-      <div class="row ">
-        <div class="col-md-4">
-            <img src="<?= base_url('assets/RS-1.jpg')?>" class="w-60">
-          </div>
-          <div class="col-md-8 px-3">
-            <div class="card-block px-2" style="margin-left:-70px;">
-              <h5>rumah sakit premiere bintaro</h5>
-            </div>
-            <div style="margin-left:-60px;">
-              <h6>lokasinya</h6>
-            </div>
-            <div class="row">
-            <div class="col-3" style="margin-right:70px;margin-top:10px;margin-left:-60px;font-size:13px;"><p class="badge badge-secondary">sistempen..</p></div>
-            <div class="col-4"><button type="button" class="btn_btn-warning" style="height:40px;weight:30px;background-color:white;color:grey;border:1px solid #cecece;margin:auto;">Cari</button></div>
-            <div class="col-4"><button type="button" class="btn_btn-warning" style="height:40px;weight:30px;border:1px solid #cecece;margin:auto">Cari</button></div>
-            </div>
-          </div>
+    </div>
+  </div>
 
+</a>
+
+<a href="<?= base_url('index.php/RSinfo_controller')?>" style="text-decoration: none;color:black;">
+  <div class="card mt-3">
+  <div class="row ">
+    <div class="col-md-4">
+        <img src="<?= base_url('assets/RS-1.jpg')?>" class="w-60">
+      </div>
+      <div class="col-md-8 px-3">
+        <div class="card-block px-2" style="margin-left:-70px;">
+          <h5>rumah sakit premiere bintaro</h5>
+        </div>
+        <div style="margin-left:-60px;">
+          <h6>lokasinya</h6>
+        </div>
+        <div class="row">
+        <div class="col-3" style="margin-right:70px;margin-top:10px;margin-left:-60px;font-size:13px;"><p class="badge badge-secondary">sistempen..</p></div>
+        <div class="col-4"><button type="button" class="btn_btn-warning" style="height:30px;weight:30px;background-color:white;color:grey;border:1px solid #cecece;margin:auto;font-weight: normal;">Lihat Detail</button></div>
+        <div class="col-4"><button type="button" class="btn_btn-warning" style="height:30px;weight:30px;border:1px solid #cecece;margin:auto;font-weight: normal;">Buat Janji</button></div>
         </div>
       </div>
 
-      <div class="card mt-3">
-      <div class="row ">
-        <div class="col-md-4">
-            <img src="<?= base_url('assets/RS-1.jpg')?>" class="w-60">
-          </div>
-          <div class="col-md-8 px-3">
-            <div class="card-block px-2" style="margin-left:-70px;">
-              <h5>rumah sakit premiere bintaro</h5>
-            </div>
-            <div style="margin-left:-60px;">
-              <h6>lokasinya</h6>
-            </div>
-            <div class="row">
-            <div class="col-3" style="margin-right:70px;margin-top:10px;margin-left:-60px;font-size:13px;"><p class="badge badge-secondary">sistempen..</p></div>
-            <div class="col-4"><button type="button" class="btn_btn-warning" style="height:40px;weight:30px;background-color:white;color:grey;border:1px solid #cecece;margin:auto;">Cari</button></div>
-            <div class="col-4"><button type="button" class="btn_btn-warning" style="height:40px;weight:30px;border:1px solid #cecece;margin:auto">Cari</button></div>
-            </div>
-          </div>
+    </div>
+  </div>
 
+</a>
+
+<a href="<?= base_url('index.php/RSinfo_controller')?>" style="text-decoration: none;color:black;">
+  <div class="card mt-3">
+  <div class="row ">
+    <div class="col-md-4">
+        <img src="<?= base_url('assets/RS-1.jpg')?>" class="w-60">
+      </div>
+      <div class="col-md-8 px-3">
+        <div class="card-block px-2" style="margin-left:-70px;">
+          <h5>rumah sakit premiere bintaro</h5>
+        </div>
+        <div style="margin-left:-60px;">
+          <h6>lokasinya</h6>
+        </div>
+        <div class="row">
+        <div class="col-3" style="margin-right:70px;margin-top:10px;margin-left:-60px;font-size:13px;"><p class="badge badge-secondary">sistempen..</p></div>
+        <div class="col-4"><button type="button" class="btn_btn-warning" style="height:30px;weight:30px;background-color:white;color:grey;border:1px solid #cecece;margin:auto;font-weight: normal;">Lihat Detail</button></div>
+        <div class="col-4"><button type="button" class="btn_btn-warning" style="height:30px;weight:30px;border:1px solid #cecece;margin:auto;font-weight: normal;">Buat Janji</button></div>
         </div>
       </div>
 
-      <div class="card mt-3">
-      <div class="row ">
-        <div class="col-md-4">
-            <img src="<?= base_url('assets/RS-1.jpg')?>" class="w-60">
-          </div>
-          <div class="col-md-8 px-3">
-            <div class="card-block px-2" style="margin-left:-70px;">
-              <h5>rumah sakit premiere bintaro</h5>
-            </div>
-            <div style="margin-left:-60px;">
-              <h6>lokasinya</h6>
-            </div>
-            <div class="row">
-            <div class="col-3" style="margin-right:70px;margin-top:10px;margin-left:-60px;font-size:13px;"><p class="badge badge-secondary">sistempen..</p></div>
-            <div class="col-4"><button type="button" class="btn_btn-warning" style="height:40px;weight:30px;background-color:white;color:grey;border:1px solid #cecece;margin:auto;">Cari</button></div>
-            <div class="col-4"><button type="button" class="btn_btn-warning" style="height:40px;weight:30px;border:1px solid #cecece;margin:auto">Cari</button></div>
-            </div>
-          </div>
+    </div>
+  </div>
 
+</a>
+
+<a href="<?= base_url('index.php/RSinfo_controller')?>" style="text-decoration: none;color:black;">
+  <div class="card mt-3">
+  <div class="row ">
+    <div class="col-md-4">
+        <img src="<?= base_url('assets/RS-1.jpg')?>" class="w-60">
+      </div>
+      <div class="col-md-8 px-3">
+        <div class="card-block px-2" style="margin-left:-70px;">
+          <h5>rumah sakit premiere bintaro</h5>
+        </div>
+        <div style="margin-left:-60px;">
+          <h6>lokasinya</h6>
+        </div>
+        <div class="row">
+        <div class="col-3" style="margin-right:70px;margin-top:10px;margin-left:-60px;font-size:13px;"><p class="badge badge-secondary">sistempen..</p></div>
+        <div class="col-4"><button type="button" class="btn_btn-warning" style="height:30px;weight:30px;background-color:white;color:grey;border:1px solid #cecece;margin:auto;font-weight: normal;">Lihat Detail</button></div>
+        <div class="col-4"><button type="button" class="btn_btn-warning" style="height:30px;weight:30px;border:1px solid #cecece;margin:auto;font-weight: normal;">Buat Janji</button></div>
         </div>
       </div>
 
-      <div class="card mt-3">
-      <div class="row ">
-        <div class="col-md-4">
-            <img src="<?= base_url('assets/RS-1.jpg')?>" class="w-60">
-          </div>
-          <div class="col-md-8 px-3">
-            <div class="card-block px-2" style="margin-left:-70px;">
-              <h5>rumah sakit premiere bintaro</h5>
-            </div>
-            <div style="margin-left:-60px;">
-              <h6>lokasinya</h6>
-            </div>
-            <div class="row">
-            <div class="col-3" style="margin-right:70px;margin-top:10px;margin-left:-60px;font-size:13px;"><p class="badge badge-secondary">sistempen..</p></div>
-            <div class="col-4"><button type="button" class="btn_btn-warning" style="height:40px;weight:30px;background-color:white;color:grey;border:1px solid #cecece;margin:auto;">Cari</button></div>
-            <div class="col-4"><button type="button" class="btn_btn-warning" style="height:40px;weight:30px;border:1px solid #cecece;margin:auto">Cari</button></div>
-            </div>
-          </div>
+    </div>
+  </div>
 
+</a>
+
+<a href="<?= base_url('index.php/RSinfo_controller')?>" style="text-decoration: none;color:black;">
+  <div class="card mt-3">
+  <div class="row ">
+    <div class="col-md-4">
+        <img src="<?= base_url('assets/RS-1.jpg')?>" class="w-60">
+      </div>
+      <div class="col-md-8 px-3">
+        <div class="card-block px-2" style="margin-left:-70px;">
+          <h5>rumah sakit premiere bintaro</h5>
+        </div>
+        <div style="margin-left:-60px;">
+          <h6>lokasinya</h6>
+        </div>
+        <div class="row">
+        <div class="col-3" style="margin-right:70px;margin-top:10px;margin-left:-60px;font-size:13px;"><p class="badge badge-secondary">sistempen..</p></div>
+        <div class="col-4"><button type="button" class="btn_btn-warning" style="height:30px;weight:30px;background-color:white;color:grey;border:1px solid #cecece;margin:auto;font-weight: normal;">Lihat Detail</button></div>
+        <div class="col-4"><button type="button" class="btn_btn-warning" style="height:30px;weight:30px;border:1px solid #cecece;margin:auto;font-weight: normal;">Buat Janji</button></div>
         </div>
       </div>
 
-      <div class="card mt-3">
-      <div class="row ">
-        <div class="col-md-4">
-            <img src="<?= base_url('assets/RS-1.jpg')?>" class="w-60">
-          </div>
-          <div class="col-md-8 px-3">
-            <div class="card-block px-2" style="margin-left:-70px;">
-              <h5>rumah sakit premiere bintaro</h5>
-            </div>
-            <div style="margin-left:-60px;">
-              <h6>lokasinya</h6>
-            </div>
-            <div class="row">
-            <div class="col-3" style="margin-right:70px;margin-top:10px;margin-left:-60px;font-size:13px;"><p class="badge badge-secondary">sistempen..</p></div>
-            <div class="col-4"><button type="button" class="btn_btn-warning" style="height:40px;weight:30px;background-color:white;color:grey;border:1px solid #cecece;margin:auto;">Cari</button></div>
-            <div class="col-4"><button type="button" class="btn_btn-warning" style="height:40px;weight:30px;border:1px solid #cecece;margin:auto">Cari</button></div>
-            </div>
-          </div>
+    </div>
+  </div>
 
+</a>
+
+<a href="<?= base_url('index.php/RSinfo_controller')?>" style="text-decoration: none;color:black;">
+  <div class="card mt-3">
+  <div class="row ">
+    <div class="col-md-4">
+        <img src="<?= base_url('assets/RS-1.jpg')?>" class="w-60">
+      </div>
+      <div class="col-md-8 px-3">
+        <div class="card-block px-2" style="margin-left:-70px;">
+          <h5>rumah sakit premiere bintaro</h5>
+        </div>
+        <div style="margin-left:-60px;">
+          <h6>lokasinya</h6>
+        </div>
+        <div class="row">
+        <div class="col-3" style="margin-right:70px;margin-top:10px;margin-left:-60px;font-size:13px;"><p class="badge badge-secondary">sistempen..</p></div>
+        <div class="col-4"><button type="button" class="btn_btn-warning" style="height:30px;weight:30px;background-color:white;color:grey;border:1px solid #cecece;margin:auto;font-weight: normal;">Lihat Detail</button></div>
+        <div class="col-4"><button type="button" class="btn_btn-warning" style="height:30px;weight:30px;border:1px solid #cecece;margin:auto;font-weight: normal;">Buat Janji</button></div>
         </div>
       </div>
 
-      
+    </div>
+  </div>
 
-      
+</a>
 
 </div>  
 
 </div>
 </div>
 </div>
+
+<?php $this->load->view('Footer_RS');?>
