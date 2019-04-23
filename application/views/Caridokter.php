@@ -1,7 +1,7 @@
 <?php $this->load->view('Page_headerdokter')?>
 
 <body>
-    <div class="col-12 " style="margin-top:63px;background-image: linear-gradient(to left, rgba(900,255,255,0) 0%, #3670d2),url('<?=base_url('assets/caridokter.png') ?>')">
+    <div class="col-12 " style="background-position: right bottom;margin-top:63px;background-image:linear-gradient(#00b2ff, #006bff),url('<?=base_url('assets/caridokter.png') ?>')">
         <div class="hdr-2">
             <div aria-label="breadcrumb">
                 <ol class="breadcrumb bg-transparent">

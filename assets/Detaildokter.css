@@ -23,6 +23,10 @@
     margin-bottom: 20px;
 }
 
+.form-check-label{
+    font-size: 18px;
+}
+
 .custom-select{
     font-size: 13px;
     font-weight: 500;
@@ -47,7 +51,7 @@
 .btn-janji{
     width: 100px;
     height: 32px;
-    background-color: #f96d01;
+    background-color: #6b6b6b;
     cursor: pointer;
     font-size: 13px;
     text-decoration: none;

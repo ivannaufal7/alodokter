@@ -1,6 +1,6 @@
 <?php $this->load->view('Page_headerdokter')?>
 
-<div class="col-12 " style="margin-top:63px; background-image: linear-gradient(to left, rgba(0,255,255,0) 0%, #3670d2),url('<?=base_url('assets/caridokter.png') ?>')">
+<div class="col-12 " style="margin-top:63px; background-image:linear-gradient(#00b2ff, #006bff),url('<?=base_url('assets/caridokter.png') ?>')">
         <div class="hdr-2">
             <div aria-label="breadcrumb">
                 <ol class="breadcrumb bg-transparent">
@@ -81,16 +81,71 @@
         <h6 class="p-2" style="margin-top: 8px; margin-left: 10px;">Filter:</h6>
         
         <div class="input-group col-3 p-2">
-          <button type="button" class="btn btn-outline-secondary btn-filter" style="font-size:14px;width:150px;text-align:left;">Tersedia Besok</button>
+          <button type="button" class="btn btn-outline-secondary btn-filter"  data-toggle="modal" data-target="#Modal1" style="font-size:14px;width:150px;text-align:left;">Tersedia Besok</button>
           <i><img src="<?= base_url('assets/arraw-down.png')?>" width="10px;" style="position:absolute; left: 130px; margin-top:-23px;"></i>
         </div>
 
         <div class="input-group col-3 p-2">
-        <button type="button" class="btn btn-outline-secondary btn-filter" style="font-size:14px;width:100px;text-align:left;">Pilih Hari</button>
+        <button type="button" class="btn btn-outline-secondary btn-filter" data-toggle="modal" data-target="#Modal1" style="font-size:14px;width:100px;text-align:left;">Pilih Hari</button>
           <i><img src="<?= base_url('assets/arraw-down.png')?>" width="10px;" style="position:absolute; left: 90px; margin-top:14px;"></i>
         </div>
       </div>  
     </div>
+
+<!-- Modal -->
+<div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Filter</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p style="color:#7C7C7C;">Hari Praktik Dokter</p>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <small class="text-muted">Tersedia Besok</small>
+        <p style="color:#7C7C7C;">Buat Janji sebelum pukul 13:00 WIB untuk konsultasi hari ini.</p>
+        <p>Pilih Hari</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">Senin</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">Selasa</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">Rabu</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">Kamis</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">Jumat</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">Sabtu</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">Minggu</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-block" data-dismiss="modal">Terapkan</button>
+      </div>
+    </div>
+  </div>
+</div>
 
     <div class="p-4">
           <h3>Cari Jadwal Dokter Kandungan</h3>
