@@ -14,6 +14,7 @@
   <script src="https://cdn.ckeditor.com/4.11.3/basic/ckeditor.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('assets/alo.ico')?>">
 
   
 </head>
