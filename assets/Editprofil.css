@@ -1,16 +1,11 @@
-body{
-    height: 100%;
-    width: 100%;
-}
-.main-container {
+.main-container2 {
     width: 667px;
     display: inline-block;
     padding-top: 45px;
     margin-left: 480px;
     position: relative;
-    bottom: 20px;
+    margin-bottom: 720px;
 }
-
 .search-tab-menu {
     width: 667px;
     margin: 0 auto;
@@ -28,13 +23,15 @@ body{
    border-bottom: 5px solid #3570D2; 
 }
 .nav li:hover{
- width: 180px;
+    width: 180px;
    border-bottom: 5px solid #3570D2; 
 }
 
-form{
+.form-profil{
+    width: 667px;
+    display: inline-block;
+    padding-top: 45px;
+    margin-left: 480px;
     position: relative;
-    margin-left: 150px;
+    bottom: 620px;
 }
-
-

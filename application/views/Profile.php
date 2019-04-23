@@ -29,7 +29,7 @@
        		<div class="search-tab-menu"> 
        			<ul class="nav">
 				  <li class="nav-item activ" style="width: 180px; text-align: center;">
-				    <a class="nav-link active" href="#">Diskusi</a>
+				    <a class="nav-link active" href="<?= base_url('index.php/Profile_controller')?>">Diskusi</a>
 				  </li>
 				  <li class="nav-item" style="width: 180px; text-align: center;">
 				    <a class="nav-link" href="<?= base_url('index.php/Editprofil_controller')?>">Edit Profil</a>
