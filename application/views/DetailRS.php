@@ -15,7 +15,7 @@
 
                     <div class="seacrhIcon">
                         <i><img src="<?= base_url('assets/search.png')?>" width="25px;" style="position:absolute; left: 190px; margin-top:15px;"></i>
-                        <input type="search" id="searchSpecialities" class="searchLocation" placeholder="Cari Dokter Spesialis atau Nama Dokter" autocomplete="off">
+                        <input type="search" id="searchSpecialities" class="searchLocation" placeholder="Cari Rumah Sakit" autocomplete="off">
                         
                     </div>
                 </td>

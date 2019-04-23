@@ -36,82 +36,86 @@
 <div class="list-wraper">
 
 <div class="row justify-content-md-center">
-<div class="col-md-3">
+<div class="col-md-3" style="margin-bottom:40px;">
 <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="assets/RS-card1.jpg" alt="Card image cap">
+  <a href=""> <img class="card-img-top" src="<?= base_url('assets/RS-card_1.jpg')?>" alt="Card image cap"> </a>
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a class="isi-cards" href="">Cek Kolesterol</a> <br>
+    <a class="isi-cards" href="">Tes Narkoba</a> <br>
+    <a class="isi-cards" href="">Tes HIV</a> <br>
+    <a class="isi-cards" href="">Profil Lemak</a> <br>
   </div>
 </div>
+<a href="" class="pil-lanjutan" >Lihat Semua Laboratorium Klinik</a>
 </div>
 
-<div class="col-md-3">
+<div class="col-md-3"  style="margin-bottom:40px;">
 <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
+  <a href=""> <img class="card-img-top" src="<?= base_url('assets/RS-card_2.jpg')?>" alt="Card image cap"> </a>
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a class="isi-cards" href="">Endoskopsi</a> <br>
+    <a class="isi-cards" href="">Oprasi turun Berok</a> <br> <br> <br>
   </div>
 </div>
+<a href="" class="pil-lanjutan" >Lihat Semua Sistem Pencernaan</a>
 </div>
 
-<div class="col-md-3">
+<div class="col-md-3" style="margin-bottom:40px;">
 <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
+  <a href=""> <img class="card-img-top" src="<?= base_url('assets/RS-card_3.jpg')?>" alt="Card image cap"> </a>
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a class="isi-cards" href="">Oprasi caesar</a> <br>
+    <a class="isi-cards" href="">Melahirkan Normal</a> <br>
+    <a class="isi-cards" href="">Bayi Tabung</a> <br>
+    <a class="isi-cards" href="">Vaksin HPV</a> <br>
   </div>
 </div>
+<a href="" class="pil-lanjutan" >Lihat Semua Kebidanan dan Kandungan</a>
 </div>
 
 </div>
 
 <div class="row justify-content-md-center">
-<div class="col-md-3">
+<div class="col-md-3" style="margin-bottom:40px;">
 <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
+  <a href=""> <img class="card-img-top" src="<?= base_url('assets/RS-card_4.jpg')?>" alt="Card image cap"> </a>
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a class="isi-cards" href="">CT scan</a> <br>
+    <a class="isi-cards" href="">MRI scan</a> <br>
+    <br> <br>
   </div>
 </div>
+<a href="" class="pil-lanjutan" >Lihat Semua Radiologi</a>
 </div>
 
-<div class="col-md-3">
+<div class="col-md-3" style="margin-bottom:40px;">
 <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
+  <a href=""> <img class="card-img-top" src="<?= base_url('assets/RS-card_5.jpg')?>" alt="Card image cap"> </a>
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a class="isi-cards" href="">Oprasi Katarak</a> <br>
+    <a class="isi-cards" href="">LASIK</a> <br>
+    <a class="isi-cards" href="">Pengobatan Mata Juling</a> <br>
+     <br>
   </div>
 </div>
+<a href="" class="pil-lanjutan" >Lihat Semua Mata</a>
 </div>
 
-<div class="col-md-3 ">
+<div class="col-md-3 " style="margin-bottom:40px;">
 <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
+  <a href=""> <img class="card-img-top" src="<?= base_url('assets/RS-card_6.jpg')?>" alt="Card image cap"> </a>
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a class="isi-cards" href="" style="">Sunat</a> <br>
+    <a class="isi-cards" href="">ESWL</a> <br>
+    <a class="isi-cards" href="">USG Prostat</a> <br>
+     <br>
   </div>
 </div>
+<a href="" class="pil-lanjutan" >Lihat Semua Saluran Kemih</a>
 </div>
 
 </div>
 </div>
 
 
-
-
-
-
-
-    <!-- style="background-image: linear-gradient(to left, rgba(0,255,255,0) 19%, #3670d2) -->
+</div>    <!-- style="background-image: linear-gradient(to left, rgba(0,255,255,0) 19%, #3670d2) -->

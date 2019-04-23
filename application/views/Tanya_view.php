@@ -18,17 +18,56 @@
 		<h3 class="txt-tanya">Tanya Dokter</h3>
 		<!-- <button class="btn btn-primary btn-lg btn-block btn-tanya">Buat Pertanyaan</button>
 		<button class="btn bg-darkblue text-white btn-lg btn-block btn-tanya">Cari Pertanyaan Berdasarkan Topik</button> -->
-		<button type="button" class="btn btn-outline-info btn-lg col-5 btn-tanya">Buat Pertanyaan</button>
-		<button type="button" class="btn btn-primary btn-lg col-6 btn-tanya">Cari Pertanyaan Berdasarkan Topik</button>
+		<a href="" class="btn btn-outline-info btn-lg col-5 btn-tanya" id="buatTanya" data-toggle="modal" data-target="#modal-confirm">Buat Pertanyaan</a>
+		<a href="" class="btn btn-primary btn-lg col-6 btn-tanya">Cari Pertanyaan Berdasarkan Topik</a>
 		<h3 class="txt-tanya">Diskusi Kesehatan Terbaru</h3>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.frmTanya').css({"display":"none"});
+				$('#lanjutTanya').click(function(){
+					<?php
+          if($this->simple_login->cek_login() == true){
+           ?>
+						$('.frmTanya').css({"display":"block"});
+						$('#modal-confirm').modal('hide');
+				<?php }else{?>
+					window.location.href = "<?php echo base_url('index.php/login_controller')?>";
+				<?php } ?>
+				});
+					
+				
+
+				$('#batal').click(function(){
+					$('.frmTanya').css({"display":"none"});
+				});
+					
+				
+			});
+		</script>
+
+		<div id="modal-confirm" class="modal fade">
+		    <div class="modal-dialog">
+		      <div class="modal-content">
+		        <div class="modal-header">
+		          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        </div>
+		        <div class="modal-body">
+		 			<p class="text-center">Pertanyaanmu akan dijawab dalam waktu maksimal 24 jam. Segera download aplikasi Alodokter untuk chat gratis bersama dokter secara personal dengan respon cepat & langsung! 
+					Lewat aplikasi Alodokter, pertanyaanmu bisa langsung ditujukan ke dokter pilihan sesuai kebutuhanmu. Kamu juga bisa mengatur privasi ekstra atas pertanyaanmu.</p>
+		        </div>
+		          <div class="modal-footer mx-auto">
+		            <button type="button" class="btn btn-outline-primary" id="lanjutTanya">Lanjutkan Bertanya</button>
+		            <button type="submit" class="btn btn-primary">Download Aplikasi</button>
+		          </div>
+		    </div>
+		  </div>
+		</div>
 
 		<div class="form-tanya">
 			
-			<?php
-          if($this->simple_login->cek_login() == true){
-           ?>
            <h6>Judul Topik</h6>
-			<form class="form-group" action="<?= base_url('index.php/Tanya_controller/tanya')?>" method="post">
+			<form class="form-group frmTanya" action="<?= base_url('index.php/Tanya_controller/tanya')?>" method="post">
 				<input type="text" class="form-control" style="margin-bottom: 12px;" name="topik" placeholder="Contoh: Dari umur berapa bayi boleh diberi makan pada ?">
 				<textarea name="textTanya"></textarea>
 				<script>
@@ -41,14 +80,11 @@
 				  </label>
 				</div>
 				<div class="text-right">
-				<button type="button" class="btn btn-outline-info btn-lg btn-tanya">Batal</button>
+				<button type="button" class="btn btn-outline-info btn-lg btn-tanya" id="batal">Batal</button>
 				<input type="submit" class="btn btn-primary btn-lg btn-tanya" value="Kirim" />				
 			</div>
 			</form>
 			
-			<?php 
-			          }
-			 ?>
 		</div>
 		
 		
