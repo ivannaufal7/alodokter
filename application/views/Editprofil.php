@@ -25,44 +25,45 @@
                 </div>
             </div>
     </div>
-       <div class="main-container"> 
+       <div class="main-container2" style="position:relative;margin-left:270px;margin-top:-570px;margin-bottom:350px;"> 
             <div class="search-tab-menu-container"> 
                 <div class="search-tab-menu"> 
                     <ul class="nav">
                     <li class="nav-item" style="width: 180px; text-align: center;">
-                        <a class="nav-link" href="#">Diskusi</a>
+                        <a class="nav-link" href="<?= base_url('index.php/Profile_controller')?>">Diskusi</a>
                     </li>
                     <li class="nav-item activ" style="width: 180px; text-align: center;">
-                        <a class="nav-link active" href="#">Edit Profil</a>
+                        <a class="nav-link active" href="<?= base_url('index.php/Editprofil_controller')?>">Edit Profil</a>
                     </li>
                     </ul>
                 </div> 
             </div>
          
-            <form>
+            <form class="form-profil" style="position:relative;margin-left:230px;margin-top:90px;">
                 <div class="form-group row">
-                    <label for="nama" class="col-sm-3 col-form-label">Nama Lengkap</label>
-                    <div class="col-sm-9">
+                    <label for="nama" class="col-sm-2 col-form-label"><b>Nama Lengkap</b></label>
+                    <div class="col-sm-7">
                     <input type="text" class="form-control" id="nama" placeholder="Nama Lengkap">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="Bio" class="col-sm-3 col-form-label">Bio</label>
-                    <div class="col-sm-9">
+                    <label for="Bio" class="col-sm-2 col-form-label"><b>Bio</b></label>
+                    <div class="col-sm-7">
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Bio"></textarea>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="nama" class="col-sm-3 col-form-label">Ganti Kata Sandi</label>
-                    <div class="col-sm-9">
+                    <label for="nama" class="col-sm-2 col-form-label"><b>Ganti Kata Sandi</b></label>
+                    <div class="col-sm-7">
                     <input type="text" class="form-control" id="password" placeholder="Masukkan kata sandi baru">
                     <br>
                     <input type="text" class="form-control" id="repassword" placeholder="Ulangi kata sandi">
                     </div>
                 </div>
-                <button class="btn btn-primary btn-download" style="margin-left:543px;">Perbarui Profil</button>
+                <button class="btn btn-primary btn-download" style="margin-left:505px;">Perbarui Profil</button>
                 
             </form>
         </div>
+</div>
         
 <?php $this->load->view('Page_footer')?>

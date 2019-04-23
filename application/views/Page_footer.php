@@ -70,7 +70,7 @@
                 </li>   
             </ul>
         </div>   
-        <p class="footer-data-tittle"><b>Bagian Dari Alodokter</b></p>   
+        <p class="footer-data-tittle"><b style="color:white;">Bagian Dari Alodokter</b></p>   
         <span>
           <a href="https://www.alomedika.com" target="_blank" class="footer-data-link">alomedika.com</a>  
         </span>
