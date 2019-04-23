@@ -3,9 +3,11 @@
 <head>
 	<title>Alodokter</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="<?= base_url('assets/styles.css')?>">
   <link rel="stylesheet" type="text/css" href="<?= base_url('assets/profile.css')?>">
+  <link rel="stylesheet" href="<?= base_url('assets/Page_footer.css')?>">
   <script src="https://cdn.ckeditor.com/4.11.3/basic/ckeditor.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>

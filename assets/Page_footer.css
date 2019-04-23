@@ -1,27 +1,93 @@
 .page-footer{
-    background-color: #F9F9F9;
+    background-color: #3570d2;
     margin: 0 auto;
     margin-top: 100px;
     border-top: 1px solid #dadee4;
     width: 1349px;
-    height: 305px;
+    height: 100%;
 }
 
 .footer-inner {
-    background-color: #F9F9F9;
+    background-color: #3570d2;
     padding-top: 26pt;
     padding-left: 150px;
     width: 1140px;
     height: 321px;
+    margin-left: 50px;
+    color: #fff;
+}
+
+.banner-footer{
+    margin-top: -25px;
+    padding: 0px 0;
+    background: -webkit-linear-gradient(left, #1c4b9a 0%,#6d97de 83%);
+    background: linear-gradient(189deg, #6d97de, #1c4b9a);
+    box-shadow: 25px -26px 160px inset #1c4b9a;
+    height: 141px;
+}
+
+.container-footer {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.text-banner {
+    margin-left: 270px;
+    color: #fff;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -100px;
+}
+
+.storeimg{
+    position: relative;
+    margin-left: 935px;
+    top: -100px;
+}
+
+.appstore{
+    position: relative;
+    margin-left: 935px;
+    top: -90px;
+}
+
+.imagephone{
+    margin-top: -57px;
+    max-width: 237px;
+    bottom: -10px;
+    left: 0;
 }
 
 .footer-data-item li {
-    margin: 10px auto;
+    margin: 5px auto;
+}
+
+ul li a b{
+    color: #ffffff;
+}
+
+ul li .footerdesc{
+    color: #ffffff;
+}
+
+li a b{
+    font-size: 18px;
+}
+
+span a{
+    color: #ffffff;
+}
+
+hr{
+    color: #ffffff;
 }
 
 li {
     display: list-item;
     text-align: -webkit-match-parent;
+    
 }
 
 .footer-data-item ul {
@@ -72,26 +138,31 @@ li {
     padding: 10px;
     font-size: 15px;
     border-radius: 60%;
-    color: #fff;
+    color: #3570d2;
     background-color: #f1f1f1;
    }
 
    .socicons-list li:nth-child(1) a {
-    background-color: #3e5b98;
+       background-color: #ffffff;
+    /* background-color: #3e5b98; */
    }
    .socicons-list li:nth-child(2) a {
-    background-color: #c13584;
+    background-color: #ffffff;
+    /* background-color: #c13584; */
    }
    .socicons-list li:nth-child(3) a {
-    background-color:#dd4b39;
+    background-color: #ffffff;
+    /* background-color:#dd4b39; */
    }
    .socicons-list li:nth-child(4) a {
-    background-color:  #4da7de;
+    background-color: #ffffff;
+    /* background-color:  #4da7de; */
    }
    .socicons-list li:nth-child(5) a {
-    background-color: #1769ff;
+    background-color: #ffffff;
+    /* background-color: #1769ff; */
    }
-}
+
 
 .footer-data-tittle{
     color: #000000 !important;
@@ -100,7 +171,7 @@ li {
     display: block;
     font-size: 16px;
     margin-bottom: 10px;
-    margin-top: -20px;
+    margin-top: 35px;
 }
 
 .footer-data-link{

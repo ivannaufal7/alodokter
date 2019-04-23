@@ -4,17 +4,18 @@
 	<title>Alodokter</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8">
-  <link rel="stylesheet" href="<?= base_url('assets/Caridokter.css')?>">
+  <link rel="stylesheet" href="<?= base_url('assets/caridokter.css')?>">
   <link rel="stylesheet" href="<?= base_url('assets/Detaildokter.css')?>">
-  <link rel="stylesheet" href="<?= base_url('assets/Footer.css')?>">
+  <link rel="stylesheet" href="<?= base_url('assets/Page_footer.css')?>">
   <link rel="stylesheet" href="<?= base_url('assets/Profildokter.css')?>">
+  <link rel="stylesheet" href="<?= base_url('assets/Editprofil.css')?>">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
   <script src="https://cdn.ckeditor.com/4.11.3/basic/ckeditor.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-
+  
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top" style="border-bottom: 1px solid #dadee4;">
@@ -35,26 +36,26 @@
    
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Info Kesehatan <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#" style="margin-right:-30px;">Info Kesehatan <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="<?= base_url('index.php/caridokter')?>">Cari Dokter <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="<?= base_url('index.php/caridokter')?>" style="margin-right:-30px;">Cari Dokter <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="<?= base_url('index.php/cariRS')?>">Cari Rumah Sakit <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="<?= base_url('index.php/cariRS')?>" style="margin-right:-30px;">Cari Rumah Sakit <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="<?= base_url('index.php/tanya')?>">Tanya Dokter <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="<?= base_url('index.php/tanya')?>" style="margin-right:60px;">Tanya Dokter <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
       <?php
           if($this->simple_login->cek_login() == true){
            ?>
             <li class="dropdown pull-right">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>
+              <a class="dropdown-toggle usrname" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>
                 <?= $this->session->userdata('username')?><span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#" class="nav-link" style="text-align: left; color:#3570D2; margin-left:0px;">Profile</a></li>
+                <li><a href="<?= base_url('index.php/Profile_controller')?>" class="nav-link" style="text-align: left; color:#3570D2; margin-left:0px;">Profile</a></li>
                 <li  style="text-align:left; color:#3570D2; margin-left:10px; font-size:14px;"><a href="#"class="nav-link"><?= anchor('login_controller/logout','Logout');?></a></li>
               </ul>
               <button class="btn btn-primary btn-download">Download Aplikasi</button>
